@@ -12,6 +12,11 @@ body{
   font-family: "Poppins";
 }
 
+.bg{
+  background-color: #07153a;
+}
+
+
 
 footer {
   background-color: #07153a;
@@ -143,37 +148,4 @@ list-style: none;
   word-wrap: break-word;
   float: left;
 }
-
-
-#introCarousel,
-    .carousel-inner,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100vh;
-    }
-
-    .carousel-item:nth-child(1) {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    .carousel-item:nth-child(2) {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    .carousel-item:nth-child(3) {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
-      #introCarousel {
-        margin-top: -58.59px;
-      }
-    }
 

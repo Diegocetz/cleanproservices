@@ -110,7 +110,7 @@
 
     </div><br>
     <!-- Copyright -->
-    <div class="text-center p-3">
+    <div class="text-center p-3 small">
       © 2024 Copyright:
       <a href="cleanproservices.com">cleanproservices.com</a>
 </div>
