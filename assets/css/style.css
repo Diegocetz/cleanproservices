@@ -12,6 +12,11 @@ body{
   font-family: "Poppins";
 }
 
+.bg{
+  background-color: #07153a;
+}
+
+
 
 footer {
   background-color: #07153a;
@@ -144,6 +149,7 @@ list-style: none;
   float: left;
 }
 
+<<<<<<< HEAD
 
 #introCarousel,
     .carousel-inner,

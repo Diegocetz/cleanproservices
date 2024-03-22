@@ -2,7 +2,7 @@
 
 <!--empieza seccion navbar-->
 <nav
- class="navbar flex-column fixed-top navbar-expand-lg navbar-light bg-light"> 
+ class="navbar flex-column fixed-top navbar-expand-lg navbar-dark bg"> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -61,37 +61,7 @@
   </nav>
 
 <!--Finaliza el navbar-->
-<body>
-
-
-<div
-  id="carouselVideoExample"
-  class="carousel slide carousel-fade"
-  data-mdb-ride="carousel"
->
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-  </div>
-
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
     <?php if(!empty($video2)){
@@ -100,11 +70,7 @@
             }
           }
           ?>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
     </div>
-
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
@@ -112,11 +78,7 @@
             }
           }
           ?>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
     </div>
-
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
@@ -124,41 +86,23 @@
             }
           }
           ?>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
     </div>
   </div>
-  
-
-
-  
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-mdb-target="#carouselVideoExample"
-    data-mdb-slide="prev"
-  >
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden"></span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-mdb-target="#carouselVideoExample"
-    data-mdb-slide="next"
-  >
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden"></span>
-  </button>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
 
 
 <!--CUERPO DE PAGINA-->
 <body>
         <div class="container-fluid">
-        <div class="card text-white bg-dark mb-3">
+        <div class="card text-white bg mb-3">
         <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){
@@ -169,8 +113,8 @@
            <div class="card-body">
     <?php if(!empty($contenido_encabezado)){
             foreach($contenido_encabezado as $item){
-              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
+              echo '<h1 class="card-title text-center display-1">' . $item['nombre'] . '</h1>';
+              echo '<p class="card-text text-center small">'. $item['contenido'] . '</p>';
             }
           }
           ?>
@@ -178,7 +122,7 @@
   </div>
 
   <div class="card-deck">
-  <div class="card text-white bg-dark mb-3">
+  <div class="card text-white bg mb-3">
               <?php
               if(!empty($imagen)){
               foreach($imagen as $item){
@@ -198,7 +142,7 @@
           ?>
           </div>
         </div>
-        <div class="card text-white bg-dark mb-3">
+        <div class="card text-white bg mb-3">
               <?php
               if(!empty($imagen2)){
               foreach($imagen2 as $item){
@@ -217,7 +161,7 @@
           ?>
           </div>
         </div>
-        <div class="card text-white bg-dark mb-3">
+        <div class="card text-white bg mb-3">
 
               <?php
               if(!empty($imagen3)){
@@ -281,7 +225,7 @@
     </div>
 
         
-    <div class="card bg-dark text-white">
+    <div class="card bg text-white">
         <?php
               if(!empty($banner3)){
               foreach($banner3 as $item){
@@ -314,7 +258,7 @@
   </div>
 
   <div class="card-deck">
-  <div class="card text-white bg-dark mb-3">
+  <div class="card text-white bg mb-3">
   <div class="card-header">
   <?php if(!empty($contenido_encabezado9)){
             foreach($contenido_encabezado9 as $item){
@@ -347,7 +291,7 @@
           <button class="btn btn-light btn-lg btn-block">Registrar</button>
         </div>
       </div>      
-    <div class="card text-white bg-dark mb-3">
+    <div class="card text-white bg mb-3">
     <div class="card-header">
         <?php if(!empty($contenido_encabezado10)){
             foreach($contenido_encabezado10 as $item){
