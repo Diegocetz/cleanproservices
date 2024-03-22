@@ -7,7 +7,17 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <a class="navbar-brand" href="">Clean Pro Services</a>
+    <a class="navbar-brand" href="">
+    <?php
+              if(!empty($imagen4)){
+              foreach($imagen4 as $item){
+                echo '<img class="rounded-circle img-fluid d-inline-block align-top " width="30" height="30" src="' . $item['ruta_imagen'] . '" alt="New York">';  
+              }
+            }
+            ?> 
+
+Clean Pro Services</a>
+
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="">Inicio</a>
