@@ -10,19 +10,20 @@
 </head>
 <!-- user.php -->
 <body>
-    <div class="login-container">
-        <h2>Iniciar sesión</h2>
+    <h1 class="display-1 text-center login">Login</h1>
+    <div class="login-container px-3 mt-0 mb-5">
+        <h1 class="text-center display-4">Iniciar sesión</h1>
         <?php echo form_open('login', 'id="demo-form"'); ?>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" class="form-control">
             </div>
-            <div class="form-group">
-                <button class="g-recaptcha btn btn-primary" 
+            <div class="form-group mb-5">
+                <button class="md-5 g-recaptcha btn btn-primary btn-lg btn-block" 
                         data-sitekey="TU_RECAPTCHA_SITE_KEY" 
                         data-callback='onSubmit' 
                         data-action='submit'>Iniciar sesión</button>

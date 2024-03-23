@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand font-weight-bold" href="">
     <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){

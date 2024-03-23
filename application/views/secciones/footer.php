@@ -4,15 +4,15 @@
         
             <ul class="nav justify-content-center">
         <li class="nav-item">
-        <a class="nav-link h4" href="#">Nosotros</a>
+        <a class="nav-link h4 font-weight-bold" href="#">Nosotros</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link h4" href="#">Contacto</a>
+        <a class="nav-link h4 font-weight-bold" href="#">Contacto</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link h4" href="#">Inversores</a>
+        <a class="nav-link h4 font-weight-bold" href="#">Inversores</a>
         </li>
  </ul>
 
@@ -32,7 +32,7 @@
 </div>
 </div>
   <div class="form-group mb-2">
-    <label for="exampleInputPassword1" class="col-lg col-form-label d-flex justify-content-center">Nombre</label>
+    <label for="exampleInputPassword1" class="col-lg col-form-label d-flex justify-content-center ">Nombre</label>
     <div class="d-flex justify-content-center">
     <div class="col-sm-6">
     <input type="name" class="form-control text-center" id="InputName1" placeholder="Escribe nombre">
