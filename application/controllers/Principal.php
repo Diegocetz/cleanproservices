@@ -24,6 +24,7 @@ class Principal extends CI_Controller {
 		$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
 		$datos['contenido_encabezado11']=$this->m->consulta_contenido("19");
 		$datos['contenido_encabezado12']=$this->m->consulta_contenido("20");
+		$datos['contenido_encabezado13']=$this->m->consulta_contenido("21");
 
 
 		$datos['precio_basico']=$this->m->consulta_contenido("11");

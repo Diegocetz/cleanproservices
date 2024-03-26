@@ -1,8 +1,13 @@
 
 .navbar{
   text-transform: uppercase;
-  justify-content: center;
-  flex-direction: column;
+  background-color: white;
+  font-size: 1rem;
+  
+}
+
+.li-group{
+flex-direction: row-reverse;
 }
 
 body{
@@ -10,20 +15,100 @@ body{
   color: black;
   font-size: 1rem;
   font-family: "Poppins";
-}
-
-.bg{
-  background-color: #07153a;
+  text-transform: uppercase;
 }
 
 
+.card{
+ 
+  text-align: center;
+  color: black;
 
-footer {
-  background-color: #07153a;
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+.card-text{
+  font-weight:lighter;
+}
+
+.img-filter{
+  filter: brightness(25%);
+  
+}
+
+.card-black{
+  color: white;
+  background-color: black;
+}
+
+.card-deck{
+  padding: 0rem 0rem 3rem;
+  margin: 0;
+}
+
+.btn{
+  text-transform: uppercase;
+  text-align: center;
+  border: solid;
+  color: white;
+  border-radius: 0%;
+  background: black;
+  justify-content: center ;
+  border: black;
+}
+
+
+.align-content{
+  text-align: center;
+  width: 75%;
+}
+
+.footer {
+  /*background-color: #07153a;*/
+  background-color: white;
   position: relative;
   padding: 50px 0 30px;
   top: -1px;
-  color: #ffffff;
+}
+input{
+  border: solid;
+  background: transparent;
+  color: chartreuse;
+ 
+
+}
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+.carousel-caption h3 {
+  color: #fff !important;
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+
+.font-weight-bold{
+  color: #07153a
+
+}
+
+.card-deck{
+  text-align: center;
+  color: white;
+  
+}
+
+.carousel-container {
+  max-width: 800px; /* Establece el ancho máximo del carrusel */
+  margin: 0 auto; /* Centra horizontalmente el carrusel */
 }
 
 .social-email-row{
@@ -176,14 +261,7 @@ label {
   border-radius: 3px;
 }
 
-.btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
+
 
 .btn:hover {
   background-color: #0056b3;
@@ -191,4 +269,8 @@ label {
 
 .login{
   color: #007bff;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }

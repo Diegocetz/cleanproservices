@@ -4,62 +4,81 @@
         
             <ul class="nav justify-content-center">
         <li class="nav-item">
-        <a class="nav-link h4 font-weight-bold" href="#">Nosotros</a>
+        <a class="nav-link font-weight-light" href="#">Nosotros</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link h4 font-weight-bold" href="#">Contacto</a>
+        <a class="nav-link font-weight-light" href="#">Contacto</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link h4 font-weight-bold" href="#">Inversores</a>
+        <a class="nav-link font-weight-light" href="#">Inversores</a>
         </li>
- </ul>
+            </ul>
+            <div class="social-email-row"></div>
 
- <div class="social-email-row"></div>
+</div>
+<div class="container container-fluid">
+<div class="row">
+  
+<div class="col-sm">
+<h1 class="display-4">
+ENTREMOS EN CONTACTO</h1>
+<p class="">Clean Pro Services.</p>
+<p class="">cleanproservices@gmail.com.</p>
+<p class="">99-92-43-48-09</p>
+
+</div>
 
 <form>
-   
 
+<div class="form-row px-2">
+<div class="form-group">
+  <div class="col-sm">
+    <label for="exampleInputPassword1">Nombre(s)</label>
+    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Ingresa tu nombre">
+  </div>
+</div>
+<div class="form-group">
 
-<h1 class="text-center">Entremos en contacto</h1>
-  <div class="form-group mb-2">
-    <label for="exampleInputEmail1" class="col-lg col-form-label d-flex justify-content-center">Email</label>
-    <div class="d-flex justify-content-center">
-    <div class="col-sm-6">
-    <input type="email" class="form-control text-center" id="InputEmail1" placeholder="Email">
+  <div class="col-sm">
+    <label for="exampleInputPassword1">Apellido(s)</label>
+    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Enter Last Name">
   </div>
 </div>
 </div>
-  <div class="form-group mb-2">
-    <label for="exampleInputPassword1" class="col-lg col-form-label d-flex justify-content-center ">Nombre</label>
-    <div class="d-flex justify-content-center">
-    <div class="col-sm-6">
-    <input type="name" class="form-control text-center" id="InputName1" placeholder="Escribe nombre">
+
+<div class="form-group">
+<div class="col-sm">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+</div>
+
+  <div class="form-group">
+  <div class="col-sm">
+
+    <label for="exampleInputNumber1">Número de Teléfono</label>
+    <input type="phone" class="form-control form-control-sm" id="exampleInputNumber1" placeholder="Enter Number">
   </div>
 </div>
-</div>
-  <div class="form-group mb-2">
-    <label for="exampleInputPassword1" class="col-lg col-form-label d-flex justify-content-center">Teléfono</label>
-    <div class="d-flex justify-content-center">
-    <div class="col-sm-6">
-    <input type="phone" class="form-control text-center" id="InputPhone" placeholder="Escribe teléfono">
+
+<div class="form-group">
+<div class="col">
+    <label for="exampleFormControlTextarea1">Mensaje o Sugerencia</label>
+    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </div>
-</div>
-  <div class="form-group mb-2">
-    <label for="exampleFormControlTextarea1" class="col-lg col-form-label d-flex justify-content-center">Mensaje</label>
-    <div class="d-flex justify-content-center">
-    <div class="col-sm-6">
-    <textarea class="form-control text-center" id="FormControlTextarea1" rows="3">Escribe mensaje</textarea>
-  </div>
+<div class="col">
+<button type="submit" class="btn btn-primary btn-block">Envíar</button>
 </div>
 </div>
-<div class="d-flex justify-content-center">
-<button type="button" class="btn btn-primary">Enviar</button>
 </div>
-<br>
+
 </form>
+
+
         
           <div class="container-fluid">
             <div class="social-email-row"></div>
@@ -71,7 +90,7 @@
                class="p-social-icon-link"
                
                role="button"
-               ><i class="fab fa-facebook-f fa-2x"></i
+               ><i class="fa fa-facebook fa-2x"></i
               ></a>
 
             <!-- Twitter -->
@@ -80,7 +99,7 @@
                 class="p-social-icon-link"
               
                 role="button"
-               ><i class="fab fa-twitter fa-2x"></i
+               ><i class="fa fa-twitter fa-2x"></i
               ></a>
 
             <!-- Instagram -->
@@ -88,7 +107,7 @@
             class="p-social-icon-link"
                href="https://www.instagram.com/"
                role="button"
-               ><i class="fab fa-instagram fa-2x"></i
+               ><i class="fa fa-instagram fa-2x"></i
               ></a>
 
 

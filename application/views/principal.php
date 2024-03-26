@@ -1,265 +1,288 @@
 
 
 <!--empieza seccion navbar-->
-<nav
- class="navbar flex-column fixed-top navbar-expand-lg navbar-dark bg"> 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <a class="navbar-brand font-weight-bold" href="">
+<nav class="navbar navbar-expand-lg fixed-top flex-column"> 
+<a class="navbar-brand" href="#">
     <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){
-                echo '<img class="rounded-circle img-fluid d-inline-block align-top " width="30" height="30" src="' . $item['ruta_imagen'] . '" alt="New York">';  
+                echo '<img class="rounded-circle d-inline-block align-middle" width="75px" height:100px src="' . $item['ruta_imagen'] . '" alt="">';  
               }
             }
-            ?> 
+        
+            ?> Clean Pro Services</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+</button>
 
-Clean Pro Services</a>
+   
+  
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
 
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="">Inicio</a>
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
+      </li>
+             
+        <li class="nav-item">
+        <a class="nav-link" href="#">Precios</a>
+      </li>
+          
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+          
+      <li class="nav-item">
+        <a class="nav-link" href="">
+        <i class="fa fa-user-circle fa-2x px-2"></i>Iniciar sesión
+        </a>
       </li>
 
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="C:\xampp\htdocs\Testing.github.io\planNegocios.html" role="button" data-bs-toggle="dropdown">Productos</a>
-        
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="C:\xampp\htdocs\Testing.github.io\planNegocios.html">Resumen ejecutivo</a></li>
-            <li><a class="dropdown-item" href="#">Administrativo organizacional</a></li>
-            <li><a class="dropdown-item" href="#">Mercado</a></li>
-            <li><a class="dropdown-item" href="#">Producción o servicios</a></li>
-            <li><a class="dropdown-item" href="#">Responsabilidad social</a></li>
-            <li><a class="dropdown-item" href="#">Legal</a></li>
-            <li><a class="dropdown-item" href="#">Finanzas</a></li>
-         </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Conocenos</a>
-          
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Resumen ejecutivo</a></li>
-            <li><a class="dropdown-item" href="#">Administrativo organizacional</a></li>
-            <li><a class="dropdown-item" href="#">Mercado</a></li>
-            <li><a class="dropdown-item" href="#">Producción o servicios</a></li>
-            <li><a class="dropdown-item" href="#">Responsabilidad social</a></li>
-            <li><a class="dropdown-item" href="#">Legal</a></li>
-            <li><a class="dropdown-item" href="#">Finanzas</a></li>
-         </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacto</a>
-          
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Resumen ejecutivo</a></li>
-            <li><a class="dropdown-item" href="#">Administrativo organizacional</a></li>
-            <li><a class="dropdown-item" href="#">Mercado</a></li>
-            <li><a class="dropdown-item" href="#">Producción o servicios</a></li>
-            <li><a class="dropdown-item" href="#">Responsabilidad social</a></li>
-            <li><a class="dropdown-item" href="#">Legal</a></li>
-            <li><a class="dropdown-item" href="#">Finanzas</a></li>
-         </ul>
-        </li>
-        
-    </ul>
-    <!-- Button trigger modal -->
-
-
-<button type="button" class="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenter">
-  Login
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        HOLA
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-secondary btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenter">
-  Registrar
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        HOLA
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+        <i class="fa fa-shopping-bag fa-2x px-2"></i>Carrito de compras
+        </a>
+      </li>
+</ul>
+          </div>
   </nav>
 
+      
+
 <!--Finaliza el navbar-->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div
+  id="carouselVideoExample"
+  class="carousel slide carousel-fade"
+  data-mdb-ride="carousel">
+
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+
+
+  <!-- Inner -->
   <div class="carousel-inner">
+        <!-- Single item -->
+
     <div class="carousel-item active">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-      echo '<video class="img-fluid" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+      echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted> <source src="' . $item['ruta_imagen'] . ' type="video/mp4"/> </video>'; 
             }
           }
           ?>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+        <p>
+          Nulla vitae elit libero, a pharetra augue mollis interdum.
+        </p>
+      </div>
     </div>
+        <!-- Single item -->
+
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-      echo '<video class="img-fluid" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+     echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+
             }
           }
           ?>
+                <div class="carousel-caption d-none d-md-block">
+
+                <h5>Second slide label</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
     </div>
+    
+        <!-- Single item -->
+
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-      echo '<video class="img-fluid" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+    echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+
             }
           }
           ?>
+
+<div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        </p>
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <!-- Inner -->
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="prev"
+  >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="next"
+  >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+<!-- Carousel wrapper -->
 
 
 <!--CUERPO DE PAGINA-->
 <body>
+<hr></hr>
+
         <div class="container-fluid">
-        <div class="card text-white bg mb-3">
         <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){
-                echo '<img class="rounded-circle mx-auto d-block img-fluid" src="' . $item['ruta_imagen'] . '" alt="New York">';  
+                echo '<img class="rounded-circle mx-auto d-block img-fluid" style="width: 18rem" src="' . $item['ruta_imagen'] . '" alt="New York">';  
               }
             }
             ?> 
-           <div class="card-body">
     <?php if(!empty($contenido_encabezado)){
             foreach($contenido_encabezado as $item){
-              echo '<h1 class="card-title text-center display-1">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center small">'. $item['contenido'] . '</p>';
+              echo '<h1 class="text-center display-1">' . $item['nombre'] . '</h1>';
+              echo '<p class="text-center">'. $item['contenido'] . '</p>';
             }
           }
           ?>
     </div>
   </div>
+  <hr></hr>
 
-  <div class="card-deck">
-  <div class="card text-white bg mb-3">
+    <div class="container-fluid">
+  <div class="card-columns">
+  
+  <div class="card ">
               <?php
               if(!empty($imagen)){
               foreach($imagen as $item){
-                echo '<img class="rounded-top card-img-top img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
 
               }
             }
             ?>
-
-           <div class="card-body">
+          </div>
+         
+          <div class="card p-3 card-black">
                <?php if(!empty($contenido_encabezado2)){
             foreach($contenido_encabezado2 as $item){
-              echo '<h2 class="mt-0 mb-1">' . $item['nombre'] . '</h2>';
-              echo '<p class="mt-0 mb-1 card-text">'. $item['contenido'] . '</p>';
+              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
+              echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
           ?>
           </div>
-        </div>
-        <div class="card text-white bg mb-3">
+
+        <div class="card ">
               <?php
               if(!empty($imagen2)){
               foreach($imagen2 as $item){
-                echo '<img class="rounded-top card-img-top img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
 
               }
             }
             ?>
-              <div class="card-body">
+            </div>
+
+          <div class="card p-3 card-black">
               <?php if(!empty($contenido_encabezado3)){
             foreach($contenido_encabezado3 as $item){
-              echo '<h2 class="mt-0 mb-1">' . $item['nombre'] . '</h2>';
-              echo '<p class="mt-0 mb-1 card-text">'. $item['contenido'] . '</p>';
+              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
+              echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
           ?>
           </div>
-        </div>
-        <div class="card text-white bg mb-3">
 
+
+        <div class="card ">
               <?php
               if(!empty($imagen3)){
               foreach($imagen3 as $item){
-                echo '<img class="rounded-top card-img-top img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
               }
             }
             ?>
-             <div class="card-body">
+            </div>
+            
+          <div class="card p-3 card-black">
              <?php if(!empty($contenido_encabezado4)){
             foreach($contenido_encabezado4 as $item){
-              echo '<h2 class="mt-0 mb-1">' . $item['nombre'] . '</h2>';
-              echo '<p class="mt-0 mb-1 card-text">'. $item['contenido'] . '</p>';
+              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
+              echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
           ?>
         </div>
-          </div>
             </div>
-            
-              
+        </div>
+
+        <hr></hr>
+
+    <div class="card-body">
+  <?php if(!empty($contenido_encabezado13)){
+            foreach($contenido_encabezado13 as $item){
+              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
+              echo '<p class="card-text text-center small">'. $item['contenido'] . '</p>';
+            }
+          }
+          ?>
           
-        <div class="card bg-dark text-white">
+  </div>
+
+            <div class="card-deck">
+        <div class="card">
         <?php
               if(!empty($banner)){
               foreach($banner as $item){
-                echo '<img class="card-img img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
+                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
               }
             }
             ?>
-        <div class="card-img-overlay">
+              <div class="card-img-overlay">
       <?php if(!empty($contenido_encabezado5)){
             foreach($contenido_encabezado5 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
+              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
               echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
@@ -268,18 +291,18 @@ Clean Pro Services</a>
       </div>
     </div>
 
-    <div class="card bg-dark text-white">
+    <div class="card">
         <?php
               if(!empty($banner2)){
               foreach($banner2 as $item){
-                echo '<img class="card-img img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
+                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
               }
             }
             ?>
-        <div class="card-img-overlay">
+              <div class="card-img-overlay">
       <?php if(!empty($contenido_encabezado11)){
             foreach($contenido_encabezado11 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
+              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
               echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
@@ -289,18 +312,18 @@ Clean Pro Services</a>
     </div>
 
         
-    <div class="card bg text-white">
+    <div class="card">
         <?php
               if(!empty($banner3)){
               foreach($banner3 as $item){
-                echo '<img class="card-img img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
+                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
               }
             }
             ?>
-        <div class="card-img-overlay">
+              <div class="card-img-overlay">
       <?php if(!empty($contenido_encabezado12)){
             foreach($contenido_encabezado12 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
+              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
               echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
@@ -308,26 +331,103 @@ Clean Pro Services</a>
         <button class="btn btn-lg">Leer Más</button>
       </div>
     </div>
+        </div>
+        </div>
+        <hr></hr>
+
+        <div class="card-body">
+        <h1 class="text-center display-4">Nuestros programas</h1>
+        </div>
+
+<div class="container-fluid">
+           <div class="card-columns">
+        <div class="card">
+        <img class="card-img" src="assets\img\LIMPIEZAS EXHAUSTIVAS.jpg" alt="Card image">
+        </div>
+       
+        <div class="card p-3 card-black">
+          <h5>Limpiezas exhaustivas</h5>   
+        </div>
+
+          <div class="card">
+        <img class="card-img" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">
+        </div>
+
+        <div class="card p-3  card-black">
+        <h5>Limpieza a inmuebles</h5>
+        </div>
+        
+
+        <div class="card">
+        <img class="card-img" src="assets\img\desinfeccion.jpg" alt="Card image">
+        </div>
+        
+        <div class="card p-3  card-black">
+        <h5>DESINFECCIÓN PATÓGENA</h5>
+        </div>
+        </div>
+
+        <hr></hr>
+
+
+        <div class="card-body">
+        <h1 class="text-center display-4">Preguntas frecuentes</h1>
+        </div>
+
+<div class="container-fluid">
+           <div class="card-deck">
+        <div class="card">       
+        <div class="card-body">
+        <h5 class="card-title">¿CÓMO ES EL SERVICIO DE DESINFECCIÓN?</h5>
+          <p class="card-text">Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus, como el de la gripe o el coronavirus.</p>  
+        </div>
+        </div>
+
+          <div class="card">
+          <div class="card-body">
+        <h5 class="card-title">¿CUÁNDO FUMIGAR?</h5>
+        <p class="card-text">No importa la temporada, ya que todo el año estamos expuestos a diferentes plagas (por ejemplo roedores en invierno, alacranes en verano, ciempiés en época de lluvias, algunas especies de cucaracha todo el año, etc.).</p>
+        </div>
+        </div>
+
+        <div class="card">        
+        <div class="card-body">
+        <h5 class="card-title">¿CÓMO EVITAR LAS HORMIGAS?</h5>
+        <p class="card-text">Los problemas surgen cuando entran en nuestros hogares en busca de comida y agua, dónde el control de hormigas puede llegar a ser muy complejo.</p>
+      
+        </div>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center">
+        <button class="btn btn-lg">Saber Más</button>
+        </div>
+
+
+        <hr></hr>
 
 
     <div class="card-body">
   <?php if(!empty($contenido_encabezado6)){
             foreach($contenido_encabezado6 as $item){
-              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
+              echo '<h1 class="card-title text-center display-1">' . $item['nombre'] . '</h1>';
               echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
             }
           }
           ?>
-          
+      
   </div>
 
+
+        <!--EMPIEZA PLAN BASICO-->  
+
   <div class="card-deck">
-  <div class="card text-white bg mb-3">
-  <div class="card-header">
+
+  <div class="card">
+  <div class="card-header card-black">
   <?php if(!empty($contenido_encabezado9)){
             foreach($contenido_encabezado9 as $item){
-              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
+              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
+              echo '<h1 class=" display-4 card-text">'. $item['contenido'] . '</h1>';
             }
           }
           ?>
@@ -342,29 +442,23 @@ Clean Pro Services</a>
             }
           }
           ?>
-          
-        </div>
-        <div class="card-footer">
-        <?php if(!empty($precio_basico)){
-            foreach($precio_basico as $item){
-              echo '<h5 class="card-title text-center">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-          <button class="btn btn-light btn-lg btn-block">Registrar</button>
-        </div>
-      </div>      
-    <div class="card text-white bg mb-3">
-    <div class="card-header">
+                  <button class="btn">Registrar</button>
+  
+  </div>
+       
+        </div>  
+        
+      <!--EMPIEZA PLAN PRO-->  
+      <div class="card">
+      <div class="card-header card-black">
         <?php if(!empty($contenido_encabezado10)){
             foreach($contenido_encabezado10 as $item){
-              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
+              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
+              echo '<h1 class=" display-4 card-text ">'. $item['contenido'] . '</h1>';
             }
           }
           ?>
-        </div>
+    </div>
         <div class="card-body">
         <?php if(!empty($contenido_encabezado8)){
             foreach($contenido_encabezado8 as $item){
@@ -373,29 +467,18 @@ Clean Pro Services</a>
             }
           }
           ?>
-        </div>
-        <div class="card-footer">
-        <?php if(!empty($precio_pro)){
-            foreach($precio_pro as $item){
-              echo '<h5 class="card-title text-center">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-          <button class="btn btn-light btn-lg btn-block">Registrar</button>
-        </div>
+                    <button class="btn">Registrar</button>
+
+   </div>
+        
       </div>      
     </div>       
        
-  </div>
 </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+<hr></hr>
+
+        </body>
+
   
 
 
