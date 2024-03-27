@@ -1,26 +1,28 @@
 
-
-<!--empieza seccion navbar-->
-<nav class="navbar navbar-expand-lg fixed-top flex-column"> 
+<nav class="navbar navbar-expand-lg navbar-bg bg fixed-top"> 
 <a class="navbar-brand" href="#">
+  
     <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){
-                echo '<img class="rounded-circle d-inline-block align-middle" width="75px" height:100px src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class="rounded-circle img-px mx-auto" src="' . $item['ruta_imagen'] . '" alt="">';  
               }
             }
         
-            ?> Clean Pro Services</a>
+            ?> 
+           </a>
+            
+
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-</button>
+</button> 
 
-   
-  
     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
 
-    <ul class="navbar-nav">
-      <li class="nav-item active">
+    
+    
+    <ul class="navbar-nav ">  
+    <li class="nav-item">
         <a class="nav-link" href="#">Inicio</a>
       </li>
     
@@ -28,27 +30,33 @@
         <a class="nav-link" href="#">Nosotros</a>
       </li>
              
-        <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="#">Precios</a>
       </li>
           
       <li class="nav-item">
         <a class="nav-link" href="#">Contacto</a>
       </li>
-          
-      <li class="nav-item">
-        <a class="nav-link" href="">
-        <i class="fa fa-user-circle fa-2x px-2"></i>Iniciar sesión
-        </a>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-user-circle-o fa-2x "></i></a>
       </li>
 
+
       <li class="nav-item">
-        <a class="nav-link" href="">
-        <i class="fa fa-shopping-bag fa-2x px-2"></i>Carrito de compras
-        </a>
+        <a class="nav-link" href="#">
+        <i class="fa fa-shopping-bag fa-2x "></i>
+      </a>
       </li>
-</ul>
+    
           </div>
+          
   </nav>
 
       
@@ -60,7 +68,7 @@
   data-mdb-ride="carousel">
 
 
-  <!-- Indicators -->
+  
   <div class="carousel-indicators">
     <button
       type="button"
@@ -86,9 +94,8 @@
 
 
 
-  <!-- Inner -->
+ 
   <div class="carousel-inner">
-        <!-- Single item -->
 
     <div class="carousel-item active">
     <?php if(!empty($video2)){
@@ -104,7 +111,6 @@
         </p>
       </div>
     </div>
-        <!-- Single item -->
 
     <div class="carousel-item">
     <?php if(!empty($video2)){
@@ -123,7 +129,6 @@
       </div>
     </div>
     
-        <!-- Single item -->
 
     <div class="carousel-item">
     <?php if(!empty($video2)){
@@ -142,7 +147,6 @@
       </div>
     </div>
   </div>
-  <!-- Inner -->
 
   <button
     class="carousel-control-prev"
@@ -163,7 +167,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<!-- Carousel wrapper -->
 
 
 <!--CUERPO DE PAGINA-->
@@ -171,10 +174,11 @@
 <hr></hr>
 
         <div class="container-fluid">
+          
         <?php
               if(!empty($imagen4)){
               foreach($imagen4 as $item){
-                echo '<img class="rounded-circle mx-auto d-block img-fluid" style="width: 18rem" src="' . $item['ruta_imagen'] . '" alt="New York">';  
+                echo '<img class="img-thumbnail rounded-circle mx-auto d-block img-fluid" style="width: 18rem" src="' . $item['ruta_imagen'] . '" alt="New York">';  
               }
             }
             ?> 
@@ -190,7 +194,7 @@
   <hr></hr>
 
     <div class="container-fluid">
-  <div class="card-columns">
+  <div class="card-group">
   
   <div class="card ">
               <?php

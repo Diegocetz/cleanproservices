@@ -107,7 +107,8 @@ ENTREMOS EN CONTACTO</h1>
             class="p-social-icon-link"
                href="https://www.instagram.com/"
                role="button"
-               ><i class="fa fa-instagram fa-2x"></i
+               >
+               <i class="fa fa-instagram fa-2x"></i
               ></a>
 
 

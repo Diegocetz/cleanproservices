@@ -1,14 +1,42 @@
 
 .navbar{
-  text-transform: uppercase;
-  background-color: white;
-  font-size: 1rem;
+  font-size: .95rem;
+  justify-content: center;
+  font-family: "Poppins";
   
 }
 
-.li-group{
-flex-direction: row-reverse;
+.bg{
+  color: red;
+  background-color: white;
 }
+
+.display-1 .h1{
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+
+ul{
+  flex: content;
+  justify-content:center;
+}
+
+.navbar-nav>li{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+}
+
+
+.img-px{
+  height: 3rem;
+  width: auto;
+  transition: all 0.3s;
+  justify-content: flex-start;
+  filter: drop-shadow(50%);
+}
+
 
 body{
   background: white;
@@ -20,19 +48,25 @@ body{
 
 
 .card{
- 
   text-align: center;
-  color: black;
+  color:black;
 
 }
 
 .card-title{
   font-weight: bold;
+    font-family: "Raleway";
+
 }
 
 .card-text{
   font-weight:lighter;
 }
+
+.card-group {
+  margin-top: 4.375rem; /* 70px en rem */
+}
+
 
 .img-filter{
   filter: brightness(25%);
@@ -47,7 +81,11 @@ body{
 .card-deck{
   padding: 0rem 0rem 3rem;
   margin: 0;
+  text-align: center;
+  color: white;
 }
+
+
 
 .btn{
   text-transform: uppercase;
@@ -61,11 +99,6 @@ body{
 }
 
 
-.align-content{
-  text-align: center;
-  width: 75%;
-}
-
 .footer {
   /*background-color: #07153a;*/
   background-color: white;
@@ -73,19 +106,15 @@ body{
   padding: 50px 0 30px;
   top: -1px;
 }
-input{
-  border: solid;
-  background: transparent;
-  color: chartreuse;
- 
 
-}
+
 .carousel-inner img {
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%); /* make all photos black and white */ 
   width: 100%; /* Set width to 100% */
   margin: auto;
 }
+
 .carousel-caption h3 {
   color: #fff !important;
 }
@@ -95,16 +124,6 @@ input{
   }
 }
 
-.font-weight-bold{
-  color: #07153a
-
-}
-
-.card-deck{
-  text-align: center;
-  color: white;
-  
-}
 
 .carousel-container {
   max-width: 800px; /* Establece el ancho máximo del carrusel */
@@ -127,18 +146,15 @@ input{
 }
 
 
-.card-group {
-  margin-top: 4.375rem; /* 70px en rem */
-}
-
 
 .jumbotron, .jumbotron-fluid {
   color: white;
-  background-color: #07153a;
+  background-color: black;
 }
 
 li{
 list-style: none;
+
 }
 
 
@@ -262,15 +278,7 @@ label {
 }
 
 
-
 .btn:hover {
   background-color: #0056b3;
 }
 
-.login{
-  color: #007bff;
-}
-
-.uppercase{
-  text-transform: uppercase;
-}
