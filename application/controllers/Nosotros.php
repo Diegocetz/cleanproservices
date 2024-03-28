@@ -14,6 +14,7 @@ public function index(){
        $this->load->view('secciones/header');
 		$this->load->view('nosotros',$datos);
 		$this->load->view('secciones/footer');
+		$this->load->view('secciones/head');
 
 	}}
 

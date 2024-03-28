@@ -55,6 +55,7 @@ class Principal extends CI_Controller {
 
 $this->load->view('secciones/header', $datos);
 		$this->load->view('principal',$datos);
+		$this->load->view('secciones/head',$datos);
 		$this->load->view('secciones/footer',$datos);
 	
 
