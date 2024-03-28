@@ -130,79 +130,9 @@
           }
           ?>
     </div>
-  </div>
   <hr></hr>
 
-    <div class="container-fluid">
-  <div class="card-group">
-  
-  <div class="card ">
-              <?php
-              if(!empty($imagen)){
-              foreach($imagen as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
-
-              }
-            }
-            ?>
-          </div>
-         
-          <div class="card p-3 card-black">
-               <?php if(!empty($contenido_encabezado2)){
-            foreach($contenido_encabezado2 as $item){
-              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-          </div>
-
-        <div class="card ">
-              <?php
-              if(!empty($imagen2)){
-              foreach($imagen2 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
-
-              }
-            }
-            ?>
-            </div>
-
-          <div class="card p-3 card-black">
-              <?php if(!empty($contenido_encabezado3)){
-            foreach($contenido_encabezado3 as $item){
-              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-          </div>
-
-
-        <div class="card ">
-              <?php
-              if(!empty($imagen3)){
-              foreach($imagen3 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
-              }
-            }
-            ?>
-            </div>
-            
-          <div class="card p-3 card-black">
-             <?php if(!empty($contenido_encabezado4)){
-            foreach($contenido_encabezado4 as $item){
-              echo '<h5 class="card-title">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-        </div>
-            </div>
-        </div>
-
-        <hr></hr>
-
+    
     <div class="card-body">
   <?php if(!empty($contenido_encabezado13)){
             foreach($contenido_encabezado13 as $item){
@@ -350,76 +280,7 @@
         <hr></hr>
 
 
-    <div class="card-body">
-  <?php if(!empty($contenido_encabezado6)){
-            foreach($contenido_encabezado6 as $item){
-              echo '<h1 class="card-title text-center display-1">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-      
-  </div>
-
-
-        <!--EMPIEZA PLAN BASICO-->  
-
-  <div class="card-deck">
-
-  <div class="card">
-  <div class="card-header card-black">
-  <?php if(!empty($contenido_encabezado9)){
-            foreach($contenido_encabezado9 as $item){
-              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
-              echo '<h1 class=" display-4 card-text">'. $item['contenido'] . '</h1>';
-            }
-          }
-          ?>
-  </div>
-
-        <div class="card-body">
-             <?php if(!empty($contenido_encabezado7)){
-            foreach($contenido_encabezado7 as $item){
-              echo '<h5 class="card-title text-center">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-
-            }
-          }
-          ?>
-                  <button class="btn">Registrar</button>
   
-  </div>
-       
-        </div>  
-        
-      <!--EMPIEZA PLAN PRO-->  
-      <div class="card">
-      <div class="card-header card-black">
-        <?php if(!empty($contenido_encabezado10)){
-            foreach($contenido_encabezado10 as $item){
-              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
-              echo '<h1 class=" display-4 card-text ">'. $item['contenido'] . '</h1>';
-            }
-          }
-          ?>
-    </div>
-        <div class="card-body">
-        <?php if(!empty($contenido_encabezado8)){
-            foreach($contenido_encabezado8 as $item){
-              echo '<h5 class="card-title text-center">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-                    <button class="btn">Registrar</button>
-
-   </div>
-        
-      </div>      
-    </div>       
-       
-</div>
-<hr></hr>
 
         </body>
 

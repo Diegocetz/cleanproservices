@@ -4,15 +4,15 @@
         
             <ul class="nav justify-content-center">
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="#">Nosotros</a>
+        <a class="nav-link font-weight-light" href="<?php echo base_url()?>nosotros">Nosotros</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="#">Contacto</a>
+        <a class="nav-link font-weight-light" href="<?php echo base_url()?>contacto">Contacto</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="#">Inversores</a>
+        <a class="nav-link font-weight-light" href="#">Faqs</a>
         </li>
             </ul>
             <div class="social-email-row"></div>

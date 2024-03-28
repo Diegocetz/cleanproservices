@@ -13,15 +13,8 @@ class Principal extends CI_Controller {
 	{
 		/*SE CARGA EL CONTENIDO DE TEXTO*/
 		$datos['contenido_encabezado']=$this->m->consulta_contenido("1");
-		$datos['contenido_encabezado2']=$this->m->consulta_contenido("2");
-		$datos['contenido_encabezado3']=$this->m->consulta_contenido("3");
-		$datos['contenido_encabezado4']=$this->m->consulta_contenido("4");
 		$datos['contenido_encabezado5']=$this->m->consulta_contenido("5");
-		$datos['contenido_encabezado6']=$this->m->consulta_contenido("6");
-		$datos['contenido_encabezado7']=$this->m->consulta_contenido("7");
-		$datos['contenido_encabezado8']=$this->m->consulta_contenido("8");
-		$datos['contenido_encabezado9']=$this->m->consulta_contenido("9");
-		$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
+		
 		$datos['contenido_encabezado11']=$this->m->consulta_contenido("19");
 		$datos['contenido_encabezado12']=$this->m->consulta_contenido("20");
 		$datos['contenido_encabezado13']=$this->m->consulta_contenido("21");
@@ -34,10 +27,7 @@ class Principal extends CI_Controller {
 		
 		/*SE CARGA LAS IMAGENES*/
 	
-		/*SE CARGA EL CONTENIDO DE TEXTO*/
-		$datos['imagen']=$this->m->consulta_imagen("8");
-		$datos['imagen2']=$this->m->consulta_imagen("7");
-		$datos['imagen3']=$this->m->consulta_imagen("5");
+	
 		$datos['imagen4']=$this->m->consulta_imagen("6");
 		$datos['video']=$this->m->consulta_imagen("9");
 		$datos['video2']=$this->m->consulta_imagen("10");
@@ -49,27 +39,59 @@ class Principal extends CI_Controller {
 
 
 
-	
-
-		/* SE CARGAN LAS VISTAS*/
-
 $this->load->view('secciones/header', $datos);
 		$this->load->view('principal',$datos);
 		$this->load->view('secciones/head',$datos);
 		$this->load->view('secciones/footer',$datos);
 	
 
+	}
 
+	public function nosotros()
+	{
+		$datos['contenido_encabezado2']=$this->m->consulta_contenido("2");
+		$datos['contenido_encabezado3']=$this->m->consulta_contenido("3");
+		$datos['contenido_encabezado4']=$this->m->consulta_contenido("4");
 
-		/*SE CARGA LAS IMAGENES*/
-	
-		
-	
-		/* SE CARGAN LAS VISTAS*/
+		$datos['imagen']=$this->m->consulta_imagen("8");
+		$datos['imagen2']=$this->m->consulta_imagen("7");
+		$datos['imagen3']=$this->m->consulta_imagen("5");
+
+		$this->load->view('secciones/header');
+		$this->load->view('nosotros',$datos);
+		$this->load->view('secciones/footer');
+		$this->load->view('secciones/head');
 
 
 	}
 
+	public function precios()
+	{
+		$datos['contenido_encabezado6']=$this->m->consulta_contenido("6");
+		$datos['contenido_encabezado7']=$this->m->consulta_contenido("7");
+		$datos['contenido_encabezado8']=$this->m->consulta_contenido("8");
+		$datos['contenido_encabezado9']=$this->m->consulta_contenido("9");
+		$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
+		
+		$this->load->view('secciones/header');
+		$this->load->view('precios',$datos);
+		$this->load->view('secciones/footer');
+		$this->load->view('secciones/head');
+
+
+	}
+
+	public function contacto()
+	{
+		$datos['contenido_encabezado']=$this->m->consulta_contenido("1");
+
+		$this->load->view('secciones/header');
+		$this->load->view('contacto',$datos);
+		$this->load->view('secciones/footer');
+		$this->load->view('secciones/head');
+
+
+	}
 
 }
  
