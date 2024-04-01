@@ -213,6 +213,7 @@
         <h1 class="text-center display-4">Nuestros programas</h1>
         </div>
 
+        <!--
 <div class="container-fluid">
            <div class="card-columns">
         <div class="card">
@@ -245,6 +246,7 @@
         <div class="card-body">
         <h1 class="text-center display-4">Preguntas frecuentes</h1>
         </div>
+        -->
 
 <div class="container-fluid">
            <div class="card-deck">

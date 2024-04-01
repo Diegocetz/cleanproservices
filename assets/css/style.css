@@ -1,12 +1,6 @@
-
-body{
-  background-color: red;
-}
-
-
 .display-1 .h1{
-  font-family: "Raleway";
-  font-weight: bold;
+  font-family: "Raleway" !important;
+  font-weight: bold !important;
 }
 
 
@@ -21,9 +15,8 @@ ul{
   
 }
 
-
 .img-px{
-  height: 3rem;
+  height: 30rem;
   width: auto;
   transition: all 0.3s;
   justify-content: flex-start;
@@ -33,6 +26,7 @@ ul{
 
 body{
   color: black;
+  background-color: crimson;
   font-size: 1rem;
   font-family: "Poppins";
   text-transform: uppercase;
