@@ -1,5 +1,4 @@
-<head>
-<nav class="navbar navbar-expand-lg navbar-bg bg fixed-top"> 
+<nav class="navbar navbar-expand-lg fixed-top"> 
 <a class="navbar-brand" href="#">
   
     <?php
@@ -53,5 +52,4 @@
     
           </div>  
   </nav>
-        </head>
       

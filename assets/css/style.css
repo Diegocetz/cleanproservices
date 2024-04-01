@@ -1,15 +1,8 @@
 
-.navbar{
-  font-size: .95rem;
-  justify-content: center;
-  font-family: "Poppins";
-  
+body{
+  background-color: red;
 }
 
-.bg{
-  color: red;
-  background-color: white;
-}
 
 .display-1 .h1{
   font-family: "Raleway";
@@ -18,7 +11,7 @@
 
 
 ul{
-  flex: content;
+  display: inline-block;
   justify-content:center;
 }
 
@@ -34,12 +27,11 @@ ul{
   width: auto;
   transition: all 0.3s;
   justify-content: flex-start;
-  filter: drop-shadow(50%);
+  filter: drop-shadow(100%);
 }
 
 
 body{
-  background: white;
   color: black;
   font-size: 1rem;
   font-family: "Poppins";
@@ -48,13 +40,15 @@ body{
 
 
 .card{
-  text-align: center;
-  color:black;
-
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color: black;
 }
 
+
 .card-title{
-  font-weight: bold;
     font-family: "Raleway";
 
 }
@@ -73,7 +67,7 @@ body{
   
 }
 
-.card-black{
+.bg-black{
   color: white;
   background-color: black;
 }
@@ -109,9 +103,8 @@ body{
 
 
 .carousel-inner img {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%); /* make all photos black and white */ 
-  width: 100%; /* Set width to 100% */
+  filter: grayscale(100%); /* make all photos black and white */ 
+  width: auto; /* Set width to 100% */
   margin: auto;
 }
 
@@ -126,8 +119,9 @@ body{
 
 
 .carousel-container {
-  max-width: 800px; /* Establece el ancho máximo del carrusel */
+  max-width: 768px; /* Establece el ancho máximo del carrusel */
   margin: 0 auto; /* Centra horizontalmente el carrusel */
+  opacity: 1;
 }
 
 .social-email-row{
@@ -281,4 +275,5 @@ label {
 .btn:hover {
   background-color: #0056b3;
 }
+
 

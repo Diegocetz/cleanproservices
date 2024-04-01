@@ -1,7 +1,7 @@
 
 
 
-<!--Finaliza el navbar-->
+<!--Finaliza el navbar
 <div
   id="carouselVideoExample"
   class="carousel slide carousel-fade"
@@ -107,7 +107,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
+        -->
 
 <!--CUERPO DE PAGINA-->
 <body>
@@ -218,17 +218,16 @@
         <div class="card">
         <img class="card-img" src="assets\img\LIMPIEZAS EXHAUSTIVAS.jpg" alt="Card image">
         </div>
-       
-        <div class="card p-3 card-black">
-          <h5>Limpiezas exhaustivas</h5>   
+        <div class="card p-3">
+          <h2>Limpiezas exhaustivas</h2>   
         </div>
 
           <div class="card">
         <img class="card-img" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">
         </div>
 
-        <div class="card p-3  card-black">
-        <h5>Limpieza a inmuebles</h5>
+        <div class="card p-3">
+        <h2>Limpieza a inmuebles</h2>
         </div>
         
 
@@ -236,11 +235,10 @@
         <img class="card-img" src="assets\img\desinfeccion.jpg" alt="Card image">
         </div>
         
-        <div class="card p-3  card-black">
-        <h5>DESINFECCIÓN PATÓGENA</h5>
+        <div class="card p-3">
+        <h2>DESINFECCIÓN PATÓGENA</h2>
         </div>
         </div>
-
         <hr></hr>
 
 

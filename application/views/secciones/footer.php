@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer>
-    <div class="container-fluid">    
+    <div class="container container-fluid">    
         
             <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -18,65 +18,7 @@
             <div class="social-email-row"></div>
 
 </div>
-<div class="container container-fluid">
-<div class="row">
-  
-<div class="col-sm">
-<h1 class="display-4">
-ENTREMOS EN CONTACTO</h1>
-<p class="">Clean Pro Services.</p>
-<p class="">cleanproservices@gmail.com.</p>
-<p class="">99-92-43-48-09</p>
 
-</div>
-
-<form>
-
-<div class="form-row px-2">
-<div class="form-group">
-  <div class="col-sm">
-    <label for="exampleInputPassword1">Nombre(s)</label>
-    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Ingresa tu nombre">
-  </div>
-</div>
-<div class="form-group">
-
-  <div class="col-sm">
-    <label for="exampleInputPassword1">Apellido(s)</label>
-    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Enter Last Name">
-  </div>
-</div>
-</div>
-
-<div class="form-group">
-<div class="col-sm">
-    <label for="exampleInputEmail1">Email</label>
-    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-</div>
-</div>
-
-  <div class="form-group">
-  <div class="col-sm">
-
-    <label for="exampleInputNumber1">Número de Teléfono</label>
-    <input type="phone" class="form-control form-control-sm" id="exampleInputNumber1" placeholder="Enter Number">
-  </div>
-</div>
-
-<div class="form-group">
-<div class="col">
-    <label for="exampleFormControlTextarea1">Mensaje o Sugerencia</label>
-    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</div>
-<div class="col">
-<button type="submit" class="btn btn-primary btn-block">Envíar</button>
-</div>
-</div>
-</div>
-
-</form>
 
 
         
