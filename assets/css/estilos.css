@@ -1,25 +1,45 @@
 
+.navbar{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 0.125em; 
+    flex-direction: column;
+}
 
-ul{
-    display: inline-block;
-    justify-content:center;
-  }
-  
-  .navbar-nav>li{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    
-  }
-  
-  .img-px{
-    height: 3rem;
-    width: auto;
-    transition: all 0.3s;
-    justify-content: flex-start;
-    filter: drop-shadow(100%);
-  }
-  
-  
+.navbar a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+    display: flex;
+
+
+}
+
+.navbar li {
+    list-style: none;
+    display: flex;
+    padding: 0 1.25rem;
+
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+.navbar-brand img{
+    width:4.125em; 
+   margin: auto;
+   padding: auto;
+}
+
+
+.container{
+    padding: 70px 0;
+}
+
+
   body{
     color: black;
     font-size: 1rem;
@@ -29,11 +49,9 @@ ul{
   
   
   .card{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    background-color: black;
+    color: black;
+    border-color: #031927;
+    
   }
   
   
@@ -42,12 +60,10 @@ ul{
   
   }
   
-  .card-text{
-    font-weight:lighter;
-  }
   
-  .card-group {
+  .card-group{
     margin-top: 4.375rem; /* 70px en rem */
+    
   }
   
   
@@ -129,16 +145,8 @@ ul{
   }
   
   
+
   
-  .jumbotron, .jumbotron-fluid {
-    color: white;
-    background-color: black;
-  }
-  
-  li{
-  list-style: none;
-  
-  }
   
   
   .chat-bubble {

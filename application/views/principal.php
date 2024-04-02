@@ -213,47 +213,80 @@
         <h1 class="text-center display-4">Nuestros programas</h1>
         </div>
 
-        <!--
-<div class="container-fluid">
+      
+<div class="container container-fluid">
            <div class="card-columns">
         <div class="card">
-        <img class="card-img" src="assets\img\LIMPIEZAS EXHAUSTIVAS.jpg" alt="Card image">
+        <!--<img class="card-img" src="assets\img\LIMPIEZAS EXHAUSTIVAS.jpg" alt="Card image">-->
         </div>
-        <div class="card p-3">
-          <h2>Limpiezas exhaustivas</h2>   
+        <div class="card">
+          <h2 class="card-title">Limpiezas exhaustivas</h2>   
         </div>
 
           <div class="card">
-        <img class="card-img" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">
+        <!--<img class="card-img" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">-->
         </div>
 
-        <div class="card p-3">
-        <h2>Limpieza a inmuebles</h2>
+        <div class="card">
+        <h2 class="card-title">Limpieza a inmuebles</h2>
         </div>
         
 
         <div class="card">
-        <img class="card-img" src="assets\img\desinfeccion.jpg" alt="Card image">
+        <!--<img class="card-img" src="assets\img\desinfeccion.jpg" alt="Card image">-->
         </div>
         
-        <div class="card p-3">
-        <h2>DESINFECCIÓN PATÓGENA</h2>
+        <div class="card">
+        <h2 class="card-title">Desinfección patógena</h2>
+        </div>
+
         </div>
         </div>
         <hr></hr>
 
 
         <div class="card-body">
-        <h1 class="text-center display-4">Preguntas frecuentes</h1>
+        <h1 class="text-center display-4">¿Cómo agendar un servicio de limpieza a domicilio?</h1>
         </div>
-        -->
+       
+        <div class="container container-fluid">
+           <div class="card-deck">
+        <div class="card">       
+        <div class="card-body">
+        <h5 class="card-title">Agenda</h5>
+          <p class="card-text">Selecciona la fecha, hora y duración para tu servicio en nuestra app o web</p>  
+        </div>
+        </div>
 
-<div class="container-fluid">
+          <div class="card">
+          <div class="card-body">
+        <h5 class="card-title">Paga</h5>
+        <p class="card-text">Realiza tu pago de forma segura con tarjeta débito/crédito, OxxoPay y SPEI</p>
+        </div>
+        </div>
+
+        <div class="card">        
+        <div class="card-body">
+        <h5 class="card-title">Limpieza en camino!</h5>
+        <p class="card-text">Una vez terminado tu servicio podrás calificar a la persona asignada.</p>
+      
+        </div>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center">
+        <button class="btn btn-lg">Saber Más</button>
+        </div>
+
+
+        <hr></hr>
+
+
+<div class="container container-fluid">
            <div class="card-deck">
         <div class="card">       
         <div class="card-body">
         <h5 class="card-title">¿CÓMO ES EL SERVICIO DE DESINFECCIÓN?</h5>
-          <p class="card-text">Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus, como el de la gripe o el coronavirus.</p>  
+          <p class="card-text">Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus.</p>  
         </div>
         </div>
 

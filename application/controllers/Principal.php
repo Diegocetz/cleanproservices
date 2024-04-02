@@ -53,9 +53,12 @@ $this->load->view('secciones/header', $datos);
 		$datos['contenido_encabezado3']=$this->m->consulta_contenido("3");
 		$datos['contenido_encabezado4']=$this->m->consulta_contenido("4");
 
+
 		$datos['imagen']=$this->m->consulta_imagen("8");
 		$datos['imagen2']=$this->m->consulta_imagen("7");
 		$datos['imagen3']=$this->m->consulta_imagen("5");
+		$datos['imagen4']=$this->m->consulta_imagen("6");
+
 
 		$this->load->view('secciones/header');
 		$this->load->view('nosotros',$datos);
@@ -72,6 +75,9 @@ $this->load->view('secciones/header', $datos);
 		$datos['contenido_encabezado8']=$this->m->consulta_contenido("8");
 		$datos['contenido_encabezado9']=$this->m->consulta_contenido("9");
 		$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
+
+		$datos['imagen4']=$this->m->consulta_imagen("6");
+
 		
 		$this->load->view('secciones/header');
 		$this->load->view('precios',$datos);
@@ -84,6 +90,8 @@ $this->load->view('secciones/header', $datos);
 	public function contacto()
 	{
 		$datos['contenido_encabezado']=$this->m->consulta_contenido("1");
+		$datos['imagen4']=$this->m->consulta_imagen("6");
+		
 
 		$this->load->view('secciones/header');
 		$this->load->view('contacto',$datos);
