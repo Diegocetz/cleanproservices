@@ -57,6 +57,8 @@ $route['principal'] = 'Principal/index';
 $route['nosotros'] = 'Principal/nosotros';
 $route['precios'] = 'Principal/precios';
 $route['contacto'] = 'Principal/contacto';
+$route['user'] = 'User/user';
+
 
 
 

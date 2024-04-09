@@ -1,54 +1,67 @@
-<hr><hr>
 
-
-
-<br><br>
+<br><br><br><br>
 
 <div class="container container-fluid">
+<div class="row"> 
 
-<div class="row">
-  
-<div class="col-sm">
-<h1 class="display-4"> ENTREMOS EN CONTACTO</h1>
 
-<ul class=list-group>
-<li class="nav-item">
-    <p class="nav-link" href="#"><i class="fa fa-home fa-2x p-2" aria-hidden="true"></i></i>
+
+<div class="card-group">
+  <div class="card card-black">
+
+    <img class="card-img img-filter" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    
+    <div class="card-body">
+
+<li>
+   <h1 class="card-title display-4 p-3"> ENTREMOS EN CONTACTO</h1>
+</li>
+
+<li>
+    <p class="card-text p-4 ">
+      <i class="fa fa-home fa-2x p-2" aria-hidden="true"></i>
     Calle 18 #154 15 y 13, Prado Norte. C.P 97139. Mérida, Yucatán
 </p>
 </li>
 
 
-<li class="nav-item">
-    <p class="nav-link" href="#"><i class="fa fa-envelope fa-2x p-2" aria-hidden="true"></i>
+<li>
+    <p class="card-text p-4 ">
+      <i class="fa fa-envelope fa-2x p-2" aria-hidden="true"></i>
     cleanproservices@gmail.com
 </p>
 </li>
 
-<li class="nav-item">
-    <p class="nav-link" href="#"><i class="fa fa-phone fa-2x p-2" aria-hidden="true"></i>
+<li>
+    <p class="card-text p-4 ">
+      <i class="fa fa-phone fa-2x p-2" aria-hidden="true"></i>
     999 243 4809
 </p>
 </li>
 
-</ul>
+
+</div>
+</div>
 </div>
 
-<form>
+
+  <div class="card">
+  <div class="card-body">
 
 <div class="form-row px-2">
-
 <div class="form-group">
   <div class="col-sm">
+
     <label for="exampleInputPassword1">Nombre(s)</label>
-    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Escribe tu nombre">
+    <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu nombre">
   </div>
 </div>
 
 <div class="form-group">
   <div class="col-sm">
     <label for="exampleInputPassword1">Apellido(s)</label>
-    <input type="name" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Escribe tu apellido">
+    <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu apellido">
   </div>
 </div>
 </div>
@@ -105,14 +118,20 @@
 <button type="submit" class="btn btn-primary btn-block">Envíar</button>
 </div>
 </div>
-</div>
-</form>
 
-<br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<hr></hr>
+
 
 <div class="container container-fluid">
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sMultilimpia!5e0!6i15" allowfullscreen></iframe>
 </div>
 </div>
-<br><br>
+<hr></hr>

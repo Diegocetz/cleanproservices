@@ -9,15 +9,11 @@ class User extends CI_Controller {
         $this->load->helper('form'); // Cargar el helper de formularios
     }
     
-    public function index(){
+    
+    public function user(){
         $datos['contenido_encabezado']=$this->m->consulta_contenido("1");
+		$datos['imagen4']=$this->m->consulta_imagen("6");
 
-        $this->load->view('secciones/header');
-        $this->load->view('user',$datos);
-		$this->load->view('secciones/footer',$datos);
-    }
-
-    public function login(){
         // Verificar el token de reCAPTCHA
         $recaptcha_response = $this->input->post('g-recaptcha-response');
         $secret_key = '6LdmvqApAAAAANinxpuAHqFOb1UBZbHQdNnf9d0h';
@@ -46,5 +42,10 @@ class User extends CI_Controller {
         } else {
             // Captcha no verificado, mostrar un mensaje de error o realizar otra acción
         }
+
+        $this->load->view('secciones/header');
+        $this->load->view('secciones/head');
+        $this->load->view('user',$datos);
+		$this->load->view('secciones/footer');
     }
 }

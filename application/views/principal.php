@@ -308,8 +308,18 @@
         <div class="d-flex justify-content-center">
         <button class="btn btn-lg">Saber Más</button>
         </div>
+        </div>
 
 
+
+
+
+        </div>
+
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">En los detalles, hacemos la diferencia
+</h2>
         <hr></hr>
 
 

@@ -1,10 +1,20 @@
+/*EMPIEZA ESTILOS DE CONTENIDO*/
+li{
+  list-style: none;
+}
 
+h1{
+  font-weight: bold;
+}
+
+/*EMPIEZA ESTILOS DE NAVBAR*/
 .navbar{
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     letter-spacing: 0.125em; 
     flex-direction: column;
+    padding: 0rem;
 }
 
 .navbar a {
@@ -24,7 +34,7 @@
 }
 
 .navbar a:hover {
-    color: red;
+    color: #0000CD;
 }
 
 
@@ -34,49 +44,61 @@
    padding: auto;
 }
 
+/*TERMINA ESTILOS DE NAVBAR*/
 
+
+
+/*EMPIEZA ESTILOS CONTENEDOR
 .container{
-    padding: 70px 0;
+  padding: 200px  20px 15px;
+  
+}
+.row{
+  margin: auto;
+  padding: auto;
 }
 
+*/
 
+/*TERMINA ESTILOS CONTENEDOR*/
+
+/*-----BODY-----*/
   body{
     color: black;
     font-size: 1rem;
     font-family: "Poppins";
     text-transform: uppercase;
   }
-  
-  
+/*-----BODY-----*/
+
+
+/*EMPIEZA ESTILOS DE CARDS*/
   .card{
     color: black;
-    border-color: #031927;
-    
   }
-  
-  
+
+  .card-black{
+    background-color: #031927;
+    color: white;
+
+  }
+
+  .bg-footer{
+    background-color: white;
+  }
   .card-title{
       font-family: "Raleway";
-  
+      text-align: center;
   }
   
-  
+  .card-text{
+    text-align: start;
+  }
+
   .card-group{
-    margin-top: 4.375rem; /* 70px en rem */
-    
+    margin-top: 4.375rem; /* 70px en rem */ 
   }
-  
-  
-  .img-filter{
-    filter: brightness(25%);
-    
-  }
-  
-  .bg-black{
-    color: white;
-    background-color: black;
-  }
-  
+
   .card-deck{
     padding: 0rem 0rem 3rem;
     margin: 0;
@@ -84,27 +106,84 @@
     color: white;
   }
   
+  .card li{
+    list-style: none;
+  }
+
+  .img-filter{ /*FILTRO DE IMAGEN A BLANCO Y NEGRO*/
+    filter: brightness(25%); 
+  }
   
-  
+  /*TERMINA ESTILOS DE CARDS*/
+
+
+  .bg-dark{
+    color: white;
+    background-color:#031927;
+  }
+
+
+
+  /*EMPIEZA ESTILOS DE BOTON*/
   .btn{
     text-transform: uppercase;
     text-align: center;
     border: solid;
     color: white;
     border-radius: 0%;
-    background: black;
+    background: #0000CD;
     justify-content: center ;
-    border: black;
+    border: #0000CD;
+  }
+
+   
+  .btn:hover {
+    background-color: #fff;
+    color: black;
+    border: solid;
+    border-color: black;
+  }
+  /*TERMINA ESTILOS DE BOTON*/
+ 
+  /*EMPIEZA FOOTER*/
+  
+  footer{
+    background-color: #031927;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 0.125em; 
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    
+
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+    display: flex;
   }
   
   
-  .footer {
-    /*background-color: #07153a;*/
-    background-color: white;
-    position: relative;
-    padding: 50px 0 30px;
-    top: -1px;
+  footer li {
+    list-style: none;
+    display: flex;
+
+}
+
+  footer a:hover {
+    color: #0084ff;
+}
+
+  
+  
+  .p-social-icon-link{
+    margin-right: 24px;
   }
+  
+/*TERMINA FOOTER*/
   
   
   .carousel-inner img {
@@ -128,22 +207,7 @@
     margin: 0 auto; /* Centra horizontalmente el carrusel */
     opacity: 1;
   }
-  
-  .social-email-row{
-    padding-top: 30px;
-    width: 100%;
-  }
-  
-  .social-email-row{
-    align-items: flex-start;
-    border-top: 1px solid white;
-  }
-  
-  
-  .p-social-icon-link{
-    margin-right: 24px;
-  }
-  
+
   
 
   
@@ -268,10 +332,7 @@
     border-radius: 3px;
   }
   
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
+ 
   
   
   

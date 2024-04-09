@@ -1,32 +1,30 @@
 <!-- Footer -->
 <footer>
+<hr></hr>
     <div class="container container-fluid">    
         
             <ul class="nav justify-content-center">
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="<?php echo base_url()?>nosotros">Nosotros</a>
+        <a class="nav-link " href="<?php echo base_url()?>nosotros">Nosotros</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="<?php echo base_url()?>contacto">Contacto</a>
+        <a class="nav-link " href="<?php echo base_url()?>contacto">Contacto</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link font-weight-light" href="#">Faqs</a>
+        <a class="nav-link" href="#">Cotizar</a>
         </li>
             </ul>
-            <div class="social-email-row"></div>
 
 </div>
 
 
-
+<hr></hr>
         
-          <div class="container-fluid">
-            <div class="social-email-row"></div>
-            <div class="social-ctn">
+          <div class=" containercontainer-fluid">
             <div class="d-flex justify-content-center">
-        
+           
             <!-- Facebook -->
             <a href="https://www.facebook.com/"
                class="p-social-icon-link"
@@ -46,8 +44,9 @@
 
             <!-- Instagram -->
             <a
-            class="p-social-icon-link"
                href="https://www.instagram.com/"
+                  class="p-social-icon-link"
+
                role="button"
                >
                <i class="fa fa-instagram fa-2x"></i
@@ -63,19 +62,25 @@
         </div>
        
 
-      </section>
 
 
 
 
 
 
-    </div><br>
+    </div>
+    <hr></hr>
     <!-- Copyright -->
-    <div class="text-center p-3 small">
+    <div class=" container container-fluid">
+            <div class="d-flex justify-content-center">
+    <p class="text-center small">
       © 2024 Copyright:
-      <a href="cleanproservices.com">cleanproservices.com</a>
+      <a href="<?php echo base_url()?>principal">cleanproservices.com</a>
+    </p>
+    
 </div>
+</div>
+
 </footer>
 
 

@@ -36,8 +36,8 @@
       </li>
   
     <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa fa-user-circle-o fa-2x "></i></a>
+        <a class="nav-link" href="<?php echo base_url()?>user">
+          <i class="fa fa-user-circle-o fa-2x"></i></a>
       </li>
 
 
