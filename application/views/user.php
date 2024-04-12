@@ -13,10 +13,16 @@
     <br><br><br><br>
 
 
-    <div class="container container-fluid">
-        <div class="col-sm-8">
-        <h2 class="card-title display-4">Iniciar sesión</h2>
+    <div class="container container-fluid container-login">
+        <div class="card p-2">
+<br>
+        <div class="col-sm-12">
+        <h2 class="card-title text-center">Iniciar sesión</h2>
     </div>
+<br>
+    <div class="alert alert-primary" role="alert">
+    Acceda y gestione sus datos.
+</div>
 
         <?php echo form_open('login', 'id="demo-form"'); ?>
             <div class="form-group">
@@ -35,6 +41,27 @@
                         data-callback='onSubmit' 
                         data-action='submit'>Iniciar sesión</button>
             </div>
+
+            <div class="row">
+
+            <div class="col-sm"> 
+            <div class="d-flex justify-content-center">
+        <a class="card-text" href="">¿No tienes una cuenta?</a>
+    </div>
+    <br>
+    </div>
+
+    <div class="col-sm">
+    <div class="d-flex justify-content-center">
+
+        <a class="card-text" href="">Restablecer contraseña</a> 
+
+    </div>
+    </div>
+    
+ </div>
+    </div>
+    </div>
         <?php echo form_close(); ?>
         <br><br><br><br><br>
-    </div>
+   
