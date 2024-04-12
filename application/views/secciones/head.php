@@ -35,17 +35,15 @@
      
       </li>
   
-    <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>user">
-          <i class="fa fa-user-circle-o fa-2x"></i></a>
-      </li>
+  <li>
+        <a class="btn text-white" href="<?php echo base_url()?>user">Login
+              </a>  
+          </li> 
 
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-        <i class="fa fa-shopping-bag fa-2x "></i>
-      </a>
-      </li>
+          <li>
+        <a class="btn text-white" href="#" role="button" >Registrar
+         </a>
+          </li>
           </ul>
     </div>  
       

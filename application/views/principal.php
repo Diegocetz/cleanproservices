@@ -290,28 +290,28 @@
         <br>
 <br>
 
-<h1 class="display-4 text-center">Preguntas frecuentes</h1>
+<h2 class="display-4 card-title">Preguntas frecuentes</h2>
 <br>
         <div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
+  <div class="card bg-footer">
+    <div class="card-header bg-footer" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        ¿Cómo es el servicio de desifección?
+        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h4 class="card-text">¿Cómo es el servicio de desifección?</h4>
         </button>
       </h5>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
       Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus      </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
+  <div class="card bg-footer">
+    <div class="card-header bg-footer" id="headingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        ¿Cómo evitar las hormigas?
+        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h4 class="card-text"> ¿Cómo evitar las hormigas?</h4>
         </button>
       </h5>
     </div>
@@ -320,11 +320,11 @@
       Los problemas surgen cuando entran en nuestros hogares en busca de comida y agua, dónde el control de hormigas puede llegar a ser muy complejo      </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
+  <div class="card bg-footer">
+    <div class="card-header bg-footer" id="headingThree">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        ¿Cuándo fumigar?
+        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h4 class="card-text">¿Cuándo fumigar?</h4>
         </button>
       </h5>
     </div>

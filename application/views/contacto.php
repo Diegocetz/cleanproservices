@@ -1,88 +1,51 @@
 
 <br><br><br><br>
+<br><br>
+
+<div class="col-sm-12">
+  <img class="img-fluid" src="assets\img\contacto.jpg" alt="">
+</div>
 
 <div class="container container-fluid">
-<div class="row"> 
 
+<br><br>
 
+  <div class="col-sm-12">
+<h2 class="card-title display-4">
+   Contacto
+</h2>
 
-<div class="card-group">
-  <div class="card card-black">
-
-    <img class="card-img img-filter" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    
-    <div class="card-body">
-
-<li>
-   <h1 class="card-title display-4 p-3"> Contacto</h1>
-</li>
-
-<li>
-    <p class="card-text p-4 ">
-      <i class="fa fa-home fa-2x p-2" aria-hidden="true"></i>
-    Calle 18 #154 15 y 13, Prado Norte. C.P 97139. Mérida, Yucatán
-</p>
-</li>
-
-
-<li>
-    <p class="card-text p-4 ">
-      <i class="fa fa-envelope fa-2x p-2" aria-hidden="true"></i>
-    cleanproservices@gmail.com
-</p>
-</li>
-
-<li>
-    <p class="card-text p-4 ">
-      <i class="fa fa-phone fa-2x p-2" aria-hidden="true"></i>
-    999 243 4809
-</p>
-</li>
-
-
+<p class="card-text">Rellena este formulario</p>
 </div>
-</div>
-</div>
+<br><br>
 
-
-  <div class="card">
-  <div class="card-body">
-
-<div class="form-row px-2">
-<div class="form-group">
+<div class="row">
   <div class="col-sm">
-
     <label for="exampleInputPassword1">Nombre(s)</label>
     <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu nombre">
   </div>
-</div>
 
-<div class="form-group">
   <div class="col-sm">
     <label for="exampleInputPassword1">Apellido(s)</label>
     <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu apellido">
   </div>
 </div>
-</div>
 
-<div class="form-group">
+<br>
 <div class="col-sm">
     <label for="exampleInputEmail1">Correo Electronico</label>
-    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu correo electronico">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <input type="email" class="form-control form-control-md" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu correo electronico">
 </div>
-</div>
+<br>
 
-  <div class="form-group">
   <div class="col-sm">
     <label for="exampleInputNumber1">Número de Teléfono</label>
-    <input type="phone" class="form-control form-control-sm" id="exampleInputNumber1" placeholder="Escribe tu telefono">
+    <input type="phone" class="form-control form-control-md" id="exampleInputNumber1" placeholder="Escribe tu telefono">
   </div>
-</div>
 
-<div class="form-row px-2">
-<div class="form-group">
+  <br>
+
+<div class="row">
 <div class="col-sm">
 <label for="exampleInputPassword1">Estado</label>
 <select class="custom-select custom-select-md">
@@ -91,9 +54,7 @@
 </select>
 
 </div>
-</div>
 
-<div class="form-group">
 <div class="col-sm">
 <label for="exampleInputPassword1">Municipio</label>
 <select class="custom-select custom-select-md">
@@ -105,33 +66,67 @@
 </select>
 </div>
 </div>
-</div>
+<br>
 
-<div class="form-group">
 <div class="col-sm">
     <label for="exampleFormControlTextarea1">¿En qué podemos ayudarle?</label>
-    <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="6"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
   </div>
+
+  <br>
+
+<div class="col-sm">
+  <div class="d-flex justify-content-center">
+<button type="submit" class="btn">Envíar</button>
+</div>
+</div>
+
+
+
+<br><br>
+<div class="col-sm-12">
+<h2 class="card-title display-4">
+   Contacto directo
+</h2>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-sm-8">
+
+<h4 class="card-title">
+<i class="bi bi-house px-2"></i>
+    Calle 18 #154 15 y 13, Prado Norte. C.P 97139. Mérida, Yucatán
+</h4>
+<br>
+<h4 class="card-title">
+<i class="bi bi-envelope px-2"></i>
+    cleanproservices@gmail.com
+</h4>
+<br>
+<h4 class="card-title">
+<i class="bi bi-telephone px-2"></i>
+    999 243 4809
+</h4>
 </div>
 
 <div class="col-sm">
-<button type="submit" class="btn btn-primary btn-block">Envíar</button>
+<img class="img-fluid" src="assets\img\logo clean.jpg" alt="">
+</div>
+
+<br><br>
+<div class="col-sm-12">
+<h2 class="card-title display-4">
+   Ubicación
+</h2>
 </div>
 </div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
+<br><br>
 
-
-<hr></hr>
-
-
-<div class="container container-fluid">
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sMultilimpia!5e0!6i15" allowfullscreen></iframe>
 </div>
+
 </div>
 <hr></hr>

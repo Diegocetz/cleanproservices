@@ -87,12 +87,10 @@ $this->load->view('secciones/header', $datos);
 
 	}
 
-	public function contacto()
-	{
+	public function contacto(){
+
 		$datos['contenido_encabezado']=$this->m->consulta_contenido("1");
 		$datos['imagen4']=$this->m->consulta_imagen("6");
-		
-
 		$this->load->view('secciones/header');
 		$this->load->view('contacto',$datos);
 		$this->load->view('secciones/footer');

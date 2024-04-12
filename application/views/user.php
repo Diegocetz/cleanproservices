@@ -9,10 +9,11 @@
     </script>
 </head>
 <!-- user.php -->
-<body>
+    <br><br><br><br>
     <h1 class="display-1 text-center login">Login</h1>
     <div class="login-container px-3 mt-0 mb-5">
         <h1 class="text-center display-4">Iniciar sesión</h1>
+
         <?php echo form_open('login', 'id="demo-form"'); ?>
             <div class="form-group mb-2">
                 <label for="username">Nombre de usuario:</label>
@@ -29,5 +30,5 @@
                         data-action='submit'>Iniciar sesión</button>
             </div>
         <?php echo form_close(); ?>
+        
     </div>
-</body>

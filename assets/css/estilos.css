@@ -64,6 +64,7 @@ li{
 
   .bg-footer{
     background-color: white;
+    border-color: transparent;
   }
  
 
@@ -283,23 +284,21 @@ li{
   /* styles.css */
  
   
-  .form-group {
-    margin-bottom: 20px;
+  .badge-primary{
+    background-color: #0000CD;
+  }
+
+  .bi{
+    color: #0000CD;
+  }
+  .bg-white{
+    color: black;
+  }
+
+  .fa{
+    color: #0000CD;
   }
   
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
- 
   
   
   
