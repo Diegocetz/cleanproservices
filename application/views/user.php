@@ -8,27 +8,33 @@
         }
     </script>
 </head>
+
 <!-- user.php -->
     <br><br><br><br>
-    <h1 class="display-1 text-center login">Login</h1>
-    <div class="login-container px-3 mt-0 mb-5">
-        <h1 class="text-center display-4">Iniciar sesión</h1>
+
+
+    <div class="container container-fluid">
+        <div class="col-sm-8">
+        <h2 class="card-title display-4">Iniciar sesión</h2>
+    </div>
 
         <?php echo form_open('login', 'id="demo-form"'); ?>
-            <div class="form-group mb-2">
+            <div class="form-group">
                 <label for="username">Nombre de usuario:</label>
-                <input type="text" id="username" name="username" class="form-control">
+                <input type="text" id="username" name="username" class="form-control form-control-md">
             </div>
-            <div class="form-group mb-2">
+            <br>
+            <div class="form-group">
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" class="form-control">
+                <input type="password" id="password" name="password" class="form-control form-control-md">
             </div>
-            <div class="form-group mb-5">
-                <button class="md-5 g-recaptcha btn btn-primary btn-lg btn-block" 
+            <br>
+            <div class="form-group">
+                <button class="g-recaptcha btn btn-block" 
                         data-sitekey="TU_RECAPTCHA_SITE_KEY" 
                         data-callback='onSubmit' 
                         data-action='submit'>Iniciar sesión</button>
             </div>
         <?php echo form_close(); ?>
-        
+        <br><br><br><br><br>
     </div>
