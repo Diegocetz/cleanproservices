@@ -103,13 +103,9 @@ li{
 
   /*EMPIEZA ESTILOS DE BOTON*/
   .btn{
-    text-align: center;
-    border: solid;
     color: white;
     border-radius: 0%;
     background: #0000CD;
-    justify-content: center ;
-    border: #0000CD;
   }
 
    
@@ -168,9 +164,7 @@ li{
     margin: auto;
   }
   
-  .carousel-caption h3 {
-    color: #fff !important;
-  }
+ 
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -178,11 +172,7 @@ li{
   }
   
   
-  .carousel-container {
-    max-width: 768px; /* Establece el ancho máximo del carrusel */
-    margin: 0 auto; /* Centra horizontalmente el carrusel */
-    opacity: 1;
-  }
+
 
   
 
@@ -302,6 +292,20 @@ li{
   .container-login{
     width: 25%;
   }
+
+  .carousel-control-prev{
+    border: transparent;
+    background: none;
+  }
+
+  .carousel-control-next{
+    border: transparent;
+    background: none;
+  }
+
+ 
+
+ 
   
   
   

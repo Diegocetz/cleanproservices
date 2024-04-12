@@ -1,113 +1,63 @@
 
 
 
-<!--Finaliza el navbar
-<div
-  id="carouselVideoExample"
-  class="carousel slide carousel-fade"
-  data-mdb-ride="carousel">
+<!--Finaliza el navbar-->
+<div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
 
-
-  
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
+  <div class="carousel-indicators carousel-control-prev">
+    <button type="btn" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+    </button>
+    <button type="btn" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="1" aria-label="Slide 2">
+    </button>
+    <button type="btn" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="2" aria-label="Slide 3">
+    </button>
   </div>
 
-
-
- 
   <div class="carousel-inner">
 
     <div class="carousel-item active">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-      echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted> <source src="' . $item['ruta_imagen'] . ' type="video/mp4"/> </video>'; 
+      echo '<video class="img-fluid embed-responsive" autoplay loop muted src="' . $item['ruta_imagen'] . ' type="video/mp4"/> '; 
             }
           }
           ?>
-                <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-        <p>
-          Nulla vitae elit libero, a pharetra augue mollis interdum.
-        </p>
-      </div>
     </div>
 
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-     echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+     echo '<video class="img-fluid embed-responsive" autoplay loop muted src="' . $item['ruta_imagen'] . 'type="video/mp4"/>';
 
             }
           }
           ?>
-                <div class="carousel-caption d-none d-md-block">
-
-                <h5>Second slide label</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
     </div>
     
 
     <div class="carousel-item">
     <?php if(!empty($video2)){
             foreach($video2 as $item){
-    echo '<video class="img-fluid embed-responsive embed-responsive-16by9" autoplay loop muted><source src="' . $item['ruta_imagen'] . 'type="video/mp4"/></video>'; 
+    echo '<video class="img-fluid embed-responsive" autoplay loop muted src="' . $item['ruta_imagen'] . 'type="video/mp4"/>'; 
 
             }
           }
           ?>
-
-<div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
-      </div>
     </div>
+
   </div>
 
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-mdb-target="#carouselVideoExample"
-    data-mdb-slide="prev"
-  >
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="visually-hidden">Antes</span>
   </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-mdb-target="#carouselVideoExample"
-    data-mdb-slide="next"
-  >
+
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden">Siguiente</span>
   </button>
 </div>
-        -->
+  
 
 <!--CUERPO DE PAGINA-->
 <body>
