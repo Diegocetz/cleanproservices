@@ -15,7 +15,7 @@
     <div class="card-body">
 
 <li>
-   <h1 class="card-title display-4 p-3"> ENTREMOS EN CONTACTO</h1>
+   <h1 class="card-title display-4 p-3"> Contacto</h1>
 </li>
 
 <li>

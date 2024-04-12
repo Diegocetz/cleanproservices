@@ -111,219 +111,232 @@
 
 <!--CUERPO DE PAGINA-->
 <body>
-<hr></hr>
+<br><br><br><br><br><br><br>
 
-        <div class="container-fluid">
-          
-        <?php
-              if(!empty($imagen4)){
-              foreach($imagen4 as $item){
-                echo '<img class="img-thumbnail rounded-circle mx-auto d-block img-fluid" style="width: 18rem" src="' . $item['ruta_imagen'] . '" alt="New York">';  
-              }
-            }
-            ?> 
+        <div class="container container-fluid">
+
+            <div class="col-sm-12">
     <?php if(!empty($contenido_encabezado)){
             foreach($contenido_encabezado as $item){
-              echo '<h1 class="text-center display-1">' . $item['nombre'] . '</h1>';
-              echo '<p class="text-center">'. $item['contenido'] . '</p>';
+              echo '<h2 class="card-title display-4 text-center">' . $item['nombre'] . '</h2>';
+              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
             }
           }
           ?>
-    </div>
-  <hr></hr>
+    </div>         
 
-    
-    <div class="card-body">
+    <br><br><br><br>
+
+    <div class="row">
+      <div class="col-sm-8">
   <?php if(!empty($contenido_encabezado13)){
             foreach($contenido_encabezado13 as $item){
-              echo '<h1 class="card-title text-center">' . $item['nombre'] . '</h1>';
-              echo '<p class="card-text text-center small">'. $item['contenido'] . '</p>';
+              echo '<h2 class="card-title ">' . $item['nombre'] . '</h2>';
+              echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
-          ?>
-          
+          ?>     
   </div>
-
-            <div class="card-deck">
-        <div class="card">
-        <?php
-              if(!empty($banner)){
-              foreach($banner as $item){
-                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
-              }
-            }
-            ?>
-              <div class="card-img-overlay">
-      <?php if(!empty($contenido_encabezado5)){
-            foreach($contenido_encabezado5 as $item){
-              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-        <button class="btn btn-lg">Leer Más</button>
-      </div>
-    </div>
-
-    <div class="card">
-        <?php
-              if(!empty($banner2)){
-              foreach($banner2 as $item){
-                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
-              }
-            }
-            ?>
-              <div class="card-img-overlay">
-      <?php if(!empty($contenido_encabezado11)){
-            foreach($contenido_encabezado11 as $item){
-              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-        <button class="btn btn-lg">Leer Más</button>
-      </div>
-    </div>
-
-        
-    <div class="card">
-        <?php
-              if(!empty($banner3)){
-              foreach($banner3 as $item){
-                echo '<img class="card-img img-filter img-fluid" src="' . $item['ruta_imagen'] . '" alt="Card image cap">';  
-              }
-            }
-            ?>
-              <div class="card-img-overlay">
-      <?php if(!empty($contenido_encabezado12)){
-            foreach($contenido_encabezado12 as $item){
-              echo '<h5 class="card-title text-white">' . $item['nombre'] . '</h5>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-        <button class="btn btn-lg">Leer Más</button>
-      </div>
-    </div>
+  <div class="col-sm">
+  <img class="img-fluid rounded" src="assets\img\logo clean.jpg" alt="">
         </div>
-        </div>
-        <hr></hr>
-
-        <div class="card-body">
-        <h1 class="text-center display-4">Nuestros programas</h1>
         </div>
 
       
-<div class="container container-fluid">
-           <div class="card-columns">
-        <div class="card">
-        <!--<img class="card-img" src="assets\img\LIMPIEZAS EXHAUSTIVAS.jpg" alt="Card image">-->
+
+           
+
+        
+        
+ 
+  
+
+<br><br>
+        <div class="col-lg">
+        <h2 class="card-title display-4 text-center">
+          Nuestros programas
+        </h2>
         </div>
-        <div class="card">
-          <h2 class="card-title">Limpiezas exhaustivas</h2>   
+        <br>
+        <br>
+
+      <div class="row">
+           <div class="col-sm">
+      <img class="img-fluid rounded" src="assets\img\limpieza1.jpg" alt="Card image">
         </div>
 
-          <div class="card">
-        <!--<img class="card-img" src="assets\img\LIMPIEZA A INMUEBLES.jpg" alt="Card image">-->
+        <div class="col-sm-8">
+          <h2 class="card-title">
+            Limpiezas exhaustivas
+          </h2>   
+         
+          <p class="card-text">
+          La limpieza exahustivas se lleva a cabo después de altas hospitalarias o intervenciones médicas. Después de la limpieza, es crucial realizar una desinfección exhaustiva del espacio y de todos sus elementos.
+        </p>
+
+        <p class="card-text">
+          Nuestro objetivo asegurar que todo esté absolutamente limpio para evitar la penetración de virus u otros agentes perjudiciales en el cuerpo.
+          </p>
+        </div>
         </div>
 
-        <div class="card">
-        <h2 class="card-title">Limpieza a inmuebles</h2>
+        <br><br>
+
+          <div class="row">
+
+          <div class="col-sm">
+          <img class="img-fluid rounded" src="assets\img\limpieza2.jpg" alt="Card image">
+        </div>
+
+        <div class="col-sm-8">
+        <h2 class="card-title">
+          Limpieza a inmuebles
+        </h2>
+
+        <p class="card-text">
+        Una de las principales razones para limpiar el inmueble, es el cuidado de nuestra salud.  ¡Sí! cuando no se ejecutan limpiezas con frecuencia, los gérmenes y bacterias se hacen presente, ocasionando problemas respiratorios, alergias, y gripe.        </p>
+        </p>
+
+        <p class="card-text">
+        Disponemos de modernas maquinarias de limpieza para hacer el trabajo de forma efectiva, en tiempo récord. Además de contar con operarios profesionales que saben lo que hacen
+        </p>
+      </div>
         </div>
         
+        <br><br>
 
-        <div class="card">
-        <!--<img class="card-img" src="assets\img\desinfeccion.jpg" alt="Card image">-->
+        <div class="row">
+
+        <div class="col-sm">
+        <img class="img-fluid rounded" src="assets\img\limpieza3.jpg" alt="Card image">
         </div>
         
-        <div class="card">
-        <h2 class="card-title">Desinfección patógena</h2>
+        <div class="col-sm-8">
+        <h2 class="card-title">
+          Desinfección patógena
+        </h2>
+
+        <p class="card-text">
+        La desinfección patógena es un proceso mediante el cual se busca eliminar agentes patógenos presentes en un área específica. Estos agentes incluyen hongos, larvas, esporas y diversos tipos de virus, como el Coronavirus o COVID-19.
+        </p>
+
+        <p class="card-text">
+        Nuestro procedimiento es altamente efectivo, ya que destruye los microorganismos en tan solo 30 segundos y puede permanecer en la superficie tratada hasta por 7 días. Además, la fórmula utilizada es 100% biodegradable y no representa riesgos para los seres humanos ni las mascotas.
+        </p>
         </div>
 
         </div>
+
+<br><br><br><br>
+        <div class="col-sm">
+        <h1 class="text-center display-4">
+          ¿Cómo agendar un servicio de limpieza a domicilio?
+        </h1>
         </div>
-        <hr></hr>
+       <br><br>
 
-
-        <div class="card-body">
-        <h1 class="text-center display-4">¿Cómo agendar un servicio de limpieza a domicilio?</h1>
+       <div class="row">
+           <div class="col-sm-8">
+        <h4 class="card-title">
+          Agenda
+        </h4>
+          <p class="card-text">
+            Selecciona la fecha, hora y duración para tu servicio en nuestra app o web
+          </p>  
+        </div>
+        <div class="col-sm">
+          <img class="img-fluid rounded" src="assets\img\agenda.png" alt="">
+        </div>
+        </div>
+        <br><br>
+       <div class="row">
+           <div class="col-sm-8">
+        <h4 class="card-title">
+          Paga
+        </h4>
+        <p class="card-text">
+          Realiza tu pago de forma segura con tarjeta débito/crédito, OxxoPay y SPEI
+        </p>
+        </div>
+        <div class="col-sm">
+          <img class="img-fluid rounded" src="assets\img\pago.png" alt="">
+        </div>
+        </div>
+ <br><br>
+        <div class="row">
+           <div class="col-sm-8">
+        <h4 class="card-title">
+          Limpieza en camino!
+        </h4>
+        <p class="card-text">
+          Una vez terminado tu servicio podrás calificar a la persona asignada.
+        </p>
+      
+        </div>
+        <div class="col-sm">
+          <img class="img-fluid rounded" src="assets\img\clean.png" alt="">
+        </div>
         </div>
        
-        <div class="container container-fluid">
-           <div class="card-deck">
-        <div class="card">       
-        <div class="card-body">
-        <h5 class="card-title">Agenda</h5>
-          <p class="card-text">Selecciona la fecha, hora y duración para tu servicio en nuestra app o web</p>  
-        </div>
-        </div>
-
-          <div class="card">
-          <div class="card-body">
-        <h5 class="card-title">Paga</h5>
-        <p class="card-text">Realiza tu pago de forma segura con tarjeta débito/crédito, OxxoPay y SPEI</p>
-        </div>
-        </div>
-
-        <div class="card">        
-        <div class="card-body">
-        <h5 class="card-title">Limpieza en camino!</h5>
-        <p class="card-text">Una vez terminado tu servicio podrás calificar a la persona asignada.</p>
-      
-        </div>
-        </div>
-        </div>
+ <br><br>
         <div class="d-flex justify-content-center">
-        <button class="btn btn-lg">Saber Más</button>
+        <button class="btn">Saber Más</button>
+        </div>
+        
+
+
+   
+
+        <br>
+<br>
+
+<h1 class="display-4 text-center">Preguntas frecuentes</h1>
+<br>
+        <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ¿Cómo es el servicio de desifección?
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ¿Cómo evitar las hormigas?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+      Los problemas surgen cuando entran en nuestros hogares en busca de comida y agua, dónde el control de hormigas puede llegar a ser muy complejo      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed bg-light text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        ¿Cuándo fumigar?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+      No importa la temporada, ya que todo el año estamos expuestos a diferentes plagas (por ejemplo roedores en invierno, alacranes en verano, ciempiés en época de lluvias, algunas especies de cucaracha todo el año, etc.).      </div>
+    </div>
+  </div>
+        </div>
         </div>
 
-
-        <hr></hr>
-
-
-<div class="container container-fluid">
-           <div class="card-deck">
-        <div class="card">       
-        <div class="card-body">
-        <h5 class="card-title">¿CÓMO ES EL SERVICIO DE DESINFECCIÓN?</h5>
-          <p class="card-text">Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus.</p>  
-        </div>
-        </div>
-
-          <div class="card">
-          <div class="card-body">
-        <h5 class="card-title">¿CUÁNDO FUMIGAR?</h5>
-        <p class="card-text">No importa la temporada, ya que todo el año estamos expuestos a diferentes plagas (por ejemplo roedores en invierno, alacranes en verano, ciempiés en época de lluvias, algunas especies de cucaracha todo el año, etc.).</p>
-        </div>
-        </div>
-
-        <div class="card">        
-        <div class="card-body">
-        <h5 class="card-title">¿CÓMO EVITAR LAS HORMIGAS?</h5>
-        <p class="card-text">Los problemas surgen cuando entran en nuestros hogares en busca de comida y agua, dónde el control de hormigas puede llegar a ser muy complejo.</p>
-      
-        </div>
-        </div>
-        </div>
-        <div class="d-flex justify-content-center">
-        <button class="btn btn-lg">Saber Más</button>
-        </div>
-        </div>
-
-
-
-
-
-        </div>
-
-<div class="card">
-  <div class="card-body">
-    <h2 class="card-title">En los detalles, hacemos la diferencia
-</h2>
-        <hr></hr>
-
-
-  
+<br><br>
 
         </body>
 

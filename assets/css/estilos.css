@@ -3,10 +3,6 @@ li{
   list-style: none;
 }
 
-h1{
-  font-weight: bold;
-}
-
 /*EMPIEZA ESTILOS DE NAVBAR*/
 .navbar{
     background-color: #fff;
@@ -44,32 +40,15 @@ h1{
    padding: auto;
 }
 
-/*TERMINA ESTILOS DE NAVBAR*/
-
-
-
-/*EMPIEZA ESTILOS CONTENEDOR
-.container{
-  padding: 200px  20px 15px;
-  
-}
-.row{
-  margin: auto;
-  padding: auto;
-}
-
-*/
-
-/*TERMINA ESTILOS CONTENEDOR*/
 
 /*-----BODY-----*/
   body{
     color: black;
     font-size: 1rem;
-    font-family: "Poppins";
-    text-transform: uppercase;
+    font-family: "Poppins"
   }
 /*-----BODY-----*/
+
 
 
 /*EMPIEZA ESTILOS DE CARDS*/
@@ -86,11 +65,8 @@ h1{
   .bg-footer{
     background-color: white;
   }
-  .card-title{
-      font-family: "Raleway";
-      text-align: center;
-  }
-  
+ 
+
   .card-text{
     text-align: start;
   }
@@ -126,7 +102,6 @@ h1{
 
   /*EMPIEZA ESTILOS DE BOTON*/
   .btn{
-    text-transform: uppercase;
     text-align: center;
     border: solid;
     color: white;
@@ -306,14 +281,7 @@ h1{
   }
   
   /* styles.css */
-  .login-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+ 
   
   .form-group {
     margin-bottom: 20px;
@@ -322,7 +290,6 @@ h1{
   label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
   }
   
   .form-control {

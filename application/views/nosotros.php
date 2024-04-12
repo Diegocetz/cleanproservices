@@ -5,19 +5,12 @@
 <br><br>
 <br><br>
 <div class="container container-fluid">
-  <div class="card-deck">
-  <div class="card">
-          
-  <?php
-              if(!empty($imagen2)){
-              foreach($imagen2 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+  
+  <div class="row">
 
-              }
-            }
-            ?>  
 
-          <div class="card-body card-black">
+            <div class="col-sm-8">
+
                <?php if(!empty($contenido_encabezado2)){
             foreach($contenido_encabezado2 as $item){
               echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
@@ -26,9 +19,27 @@
           }
           ?>
           </div>
+          <div class="col-sm">
+    <!--      
+  <?php
+              if(!empty($imagen2)){
+              foreach($imagen2 as $item){
+                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+
+              }
+            }
+            ?>  
+          -->
+          <img class="img-fluid rounded" src="assets\img\quienes.png" alt="">
+            </div>
         </div>
-        <div class="card ">
-              <?php
+        <br>
+
+        <div class="row">
+        <div class="col-sm">
+             <!--
+             
+             <?php
               if(!empty($imagen2)){
               foreach($imagen2 as $item){
                 echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
@@ -36,10 +47,12 @@
               }
             }
             ?>
-
-          <div class="card-body card-black">
+            -->
+            <img class="img-fluid rounded" src="assets\img\meta.png" alt="">
+            </div>
+            <div class="col-sm-8">
               <?php if(!empty($contenido_encabezado3)){
-            foreach($contenido_encabezado3 as $item){
+              foreach($contenido_encabezado3 as $item){
               echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
               echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
@@ -47,19 +60,13 @@
           ?>
           </div>
           </div>
+          <br>
+          <br>
 
 
-        <div class="card ">
-        <?php
-              if(!empty($imagen2)){
-              foreach($imagen2 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
-
-              }
-            }
-            ?>
-
-          <div class="card-body card-black">
+        <div class="row">
+        
+        <div class="col-sm-8">
              <?php if(!empty($contenido_encabezado4)){
             foreach($contenido_encabezado4 as $item){
               echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
@@ -68,62 +75,66 @@
           }
           ?>
         </div>
+        <div class="col-sm">
+          <!--
+        <?php
+              if(!empty($imagen2)){
+              foreach($imagen2 as $item){
+                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+
+              }
+            }
+            ?>
+            -->
+            <img class="img-fluid rounded" src="assets\img\mision.png" alt="">
+        </div>
         </div>
 
-        </div>
-<br><br>
+<br><br><br><br><br><br>
 
-<div class="container container-fluid">
 <div class="row">
 
-<div class="col-sm-6">
-<img class="img-fluid" src="assets\img\personal.jpg" alt="Card image cap">
+<div class="col-sm">
+<img class="img-fluid rounded" src="assets\img\personal.jpg" alt="Card image cap">
 </div>
 
-<div class="col-sm-6">
-<div class="card p-5">
-  <div class="card-body">
+<div class="col-sm-8">
     <h2 class="card-title p-3">
     ¿Cómo elegimos al personal que brinda tu servicio?
     </h2>
     
-    <li class="card-text p-3">
+    <p class="card-text p-3">
       Aplicamos a los candidatos una entrevista estructurada realizada por nuestro equipo de criminólogos con el fin de detectar que la persona no sea propensa a realizar alguna actividad ilícita, tenga conexión con grupos criminales o haya cometido delitos en empleos anteriores.
-</li>
+        </p>
 
 </div>
 </div>
-</div>
 
 
-</div>
 <br><br><br><br>
 
 <div class="row">
 
-<div class="col-sm">
-<div class="card p-5">
-<h2 class="card-title v">
+<div class="col-sm-8">
+<h2 class="card-title">
 Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
 </h2>
-<li class="card-text p-3">
-      Sólo 3 de cada 10 personas aprueban nuestro proceso, esto nos asegura que contemos solo con el mejor equipo.
-</li>
 
-</div>
+<p class="card-text p-3">
+      Sólo 3 de cada 10 personas aprueban nuestro proceso, esto nos asegura que contemos solo con el mejor equipo.
+        </p>
 </div>
 
 <div class="col-sm">
-<img class="img-fluid" src="assets\img\contrato.jpg" alt="Card image cap">
+<img class="img-fluid rounded" src="assets\img\contrato.jpg" alt="Card image cap">
 </div>
 
 </div>
-</div>
-<br><br>
+<br><br><br><br>
 
 
 
-  <h1 class="card-title">Mantener desinfectados los espacios de trabajo es prioridad.
+  <h1 class="card-title display-4 text-center">Mantener desinfectados los espacios de trabajo es prioridad.
 Déjalo en nuestras manos.</h1>
 
        
@@ -168,16 +179,14 @@ Déjalo en nuestras manos.</h1>
 
         -->
         <div class="row">
-
-        <div class="col-sm-6">
-<img class="img-fluid" src="assets\img\familia.jpg" alt="Card image cap">
-
+        <div class="col-sm">
+<img class="img-fluid rounded" src="assets\img\familia.jpg" alt="Card image cap">
       </div>
 
-  <div class="col-sm-6">
-<div class="card">
-  <div class="card-body">
-    <h2 class="card-title">Contribuye al impacto social que genera nuestra comunidad
+
+  <div class="col-sm-8">
+    <h2 class="card-title">
+      Contribuye al impacto social que genera nuestra comunidad
     </h2>
 
     <li class="card-text p-3">
@@ -196,17 +205,15 @@ Déjalo en nuestras manos.</h1>
     Dedican más tiempo a sus familias.
       </li>
      
-        </div>
-        </div>
         </div> 
         </div> 
 
 <br><br>
+
 <div class="row">
-  <div class="col-sm-6">
-<div class="card">
-  <div class="card-body">
-    <h2 class="card-title">En los detalles, hacemos la diferencia
+  <div class="col-sm-8">
+    <h2 class="card-title">
+      En los detalles, hacemos la diferencia
     </h2>
 
     <li class="card-text p-3">
@@ -226,16 +233,12 @@ Déjalo en nuestras manos.</h1>
     </li>
      
         </div>
-        </div>
-        </div>
 
-<div class="col-sm-6">
-<img class="img-fluid" src="assets\img\personal.jpg" alt="Card image cap">
+
+<div class="col-sm">
+<img class="img-fluid rounded" src="assets\img\personal.jpg" alt="Card image cap">
 
       </div>
-      </div>
-      
-
       </div>
       </div>
 <br><br>
