@@ -11,7 +11,7 @@
         <!--SE AGRUPA LAS CARTAS-->
   <div class="card-deck">
 <!--CARTA-->
-  <div class="card">
+  <div class="card pricing-card">
   <div class="card-header bg-footer">  
     <br>           
 </div>
@@ -56,7 +56,7 @@
 
 
 <!--CARTA-->
-<div class="card">        
+<div class="card pricing-card">        
   <div class="card-header bg-footer">             
    <span class="badge badge-primary m-0">El más popular</span>
 </div>
@@ -252,14 +252,13 @@
     
 <br><br><br><br>
 
-        <h1 class="display-4 card-title">Preguntas frecuentes</h1>
+        <h1 class="card-title text-center">Preguntas frecuentes</h1>
 <br><br>
         <div id="accordion">
-  <div class="card bg-footer">
-    <div class="card-header bg-white" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="collapse" aria-controls="collapseOne">
-          <h4 class="card-title">¿Qué incluye la suscripción?</h4>
+  <div class="card">
+    <div class="card-header" id="headingOne">
+        <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="collapse" aria-controls="collapseOne">
+          <h5 class="card-title">¿Qué incluye la suscripción?</h4>
         </button>
       </h5>
     </div>
@@ -270,11 +269,10 @@
       </div>
     </div>
   </div>
-  <div class="card bg-footer">
-    <div class="card-header bg-white" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h4 class="card-title">¿Cuál es la diferencia entre el plan estándar y el plan personalizado?</h4>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+        <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h5 class="card-title">¿Cuál es la diferencia entre el plan estándar y el plan personalizado?</h4>
         </button>
       </h5>
     </div>
@@ -284,11 +282,10 @@
       </div>
     </div>
   </div>
-  <div class="card bg-footer">
-    <div class="card-header bg-white" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h4 class="card-title">¿Clean Pro Services esta disponible en mi cuidad?</h4>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+        <button class="btn-card btn-link collapsed " data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h5 class="card-title">¿Clean Pro Services esta disponible en mi cuidad?</h4>
         </button>
       </h5>
     </div>

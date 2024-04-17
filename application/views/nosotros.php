@@ -6,7 +6,7 @@
 <br><br>
 <div class="container container-fluid">
   
-  <div class="row">
+  <div class="row container-black">
 
 
             <div class="col-sm-8">
@@ -35,7 +35,7 @@
         </div>
         <br>
 
-        <div class="row">
+        <div class="row container-black">
         <div class="col-sm">
              <!--
              
@@ -64,7 +64,7 @@
           <br>
 
 
-        <div class="row">
+        <div class="row container-black">
         
         <div class="col-sm-8">
              <?php if(!empty($contenido_encabezado4)){
@@ -92,7 +92,7 @@
 
 <br><br><br><br><br><br>
 
-<div class="row">
+<div class="row container-black">
 
 <div class="col-sm">
 <img class="img-fluid rounded" src="assets\img\personal.jpg" alt="Card image cap">
@@ -113,9 +113,9 @@
 
 <br><br><br><br>
 
-<div class="row">
+<div class="row container-black">
 
-<div class="col-sm-8">
+<div class="col-sm">
 <h2 class="card-title">
 Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
 </h2>
@@ -131,14 +131,6 @@ Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
 
 </div>
 <br><br><br><br>
-
-
-
-  <h1 class="card-title display-4 text-center">Mantener desinfectados los espacios de trabajo es prioridad.
-Déjalo en nuestras manos.</h1>
-
-       
-        <br><br>
 
         <!--
         <div class="card-deck">
@@ -178,14 +170,14 @@ Déjalo en nuestras manos.</h1>
         </div>
 
         -->
-        <div class="row">
+        <div class="row container-black">
         <div class="col-sm">
 <img class="img-fluid rounded" src="assets\img\familia.jpg" alt="Card image cap">
       </div>
 
 
-  <div class="col-sm-8">
-    <h2 class="card-title">
+  <div class="col-sm">
+    <h2 class="card-title text-center">
       Contribuye al impacto social que genera nuestra comunidad
     </h2>
 
@@ -210,9 +202,9 @@ Déjalo en nuestras manos.</h1>
 
 <br><br>
 
-<div class="row">
-  <div class="col-sm-8">
-    <h2 class="card-title">
+<div class="row container-black">
+  <div class="col-sm">
+    <h2 class="card-title text-center">
       En los detalles, hacemos la diferencia
     </h2>
 

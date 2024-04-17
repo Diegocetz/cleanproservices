@@ -1,7 +1,7 @@
 
 
 
-<!--Finaliza el navbar-->
+<!--Finaliza el navbar
 <div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
 
   <div class="carousel-indicators carousel-control-prev">
@@ -59,7 +59,8 @@
 </div>
   
 
-<!--CUERPO DE PAGINA-->
+CUERPO DE PAGINA-->
+        
 <body>
 <br><br><br><br><br><br><br>
 
@@ -68,7 +69,7 @@
             <div class="col-sm-12">
     <?php if(!empty($contenido_encabezado)){
             foreach($contenido_encabezado as $item){
-              echo '<h2 class="card-title display-4 text-center">' . $item['nombre'] . '</h2>';
+              echo '<h1 class="card-title display-4 text-center">' . $item['nombre'] . '</h2>';
               echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
             }
           }
@@ -77,11 +78,11 @@
 
     <br><br><br><br>
 
-    <div class="row">
+    <div class="row container-black">
       <div class="col-sm-8">
   <?php if(!empty($contenido_encabezado13)){
             foreach($contenido_encabezado13 as $item){
-              echo '<h2 class="card-title ">' . $item['nombre'] . '</h2>';
+              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
               echo '<p class="card-text">'. $item['contenido'] . '</p>';
             }
           }
@@ -103,19 +104,19 @@
 
 <br><br>
         <div class="col-lg">
-        <h2 class="card-title display-4 text-center">
+        <h1 class="card-title text-center">
           Nuestros programas
-        </h2>
+        </h1>
         </div>
         <br>
         <br>
 
-      <div class="row">
+      <div class="row container-black">
            <div class="col-sm">
       <img class="img-fluid rounded" src="assets\img\limpieza1.jpg" alt="Card image">
         </div>
 
-        <div class="col-sm-8">
+        <div class="col-sm">
           <h2 class="card-title">
             Limpiezas exhaustivas
           </h2>   
@@ -132,13 +133,13 @@
 
         <br><br>
 
-          <div class="row">
+          <div class="row container-black">
 
           <div class="col-sm">
           <img class="img-fluid rounded" src="assets\img\limpieza2.jpg" alt="Card image">
         </div>
 
-        <div class="col-sm-8">
+        <div class="col-sm">
         <h2 class="card-title">
           Limpieza a inmuebles
         </h2>
@@ -155,13 +156,13 @@
         
         <br><br>
 
-        <div class="row">
+        <div class="row container-black">
 
         <div class="col-sm">
         <img class="img-fluid rounded" src="assets\img\limpieza3.jpg" alt="Card image">
         </div>
         
-        <div class="col-sm-8">
+        <div class="col-sm">
         <h2 class="card-title">
           Desinfección patógena
         </h2>
@@ -179,13 +180,13 @@
 
 <br><br><br><br>
         <div class="col-sm">
-        <h1 class="text-center display-4">
+        <h1 class="text-center card-title">
           ¿Cómo agendar un servicio de limpieza a domicilio?
         </h1>
         </div>
        <br><br>
 
-       <div class="row">
+       <div class="row container-black">
            <div class="col-sm-8">
         <h4 class="card-title">
           Agenda
@@ -199,7 +200,7 @@
         </div>
         </div>
         <br><br>
-       <div class="row">
+       <div class="row container-black">
            <div class="col-sm-8">
         <h4 class="card-title">
           Paga
@@ -213,7 +214,7 @@
         </div>
         </div>
  <br><br>
-        <div class="row">
+        <div class="row container-black">
            <div class="col-sm-8">
         <h4 class="card-title">
           Limpieza en camino!
@@ -239,15 +240,15 @@
 
         <br>
 <br>
-
-<h2 class="display-4 card-title">Preguntas frecuentes</h2>
+<div class="col-sm-12">
+<h1 class="card-title text-center">Preguntas frecuentes</h1>
+        </div>
 <br>
         <div id="accordion">
-  <div class="card bg-footer">
-    <div class="card-header bg-footer" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <h4 class="card-text">¿Cómo es el servicio de desifección?</h4>
+  <div class="card">
+    <div class="card-header" id="headingOne">
+        <button class="btn-link collapsed  btn-card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h5 class="card-title">¿Cómo es el servicio de desifección?</h5>
         </button>
       </h5>
     </div>
@@ -257,11 +258,10 @@
       Desinfección de instalaciones mediante técnicas de pulverización y nebulización con desinfectantes de amplio espectro, para prevenir la propagación de bacterias y virus      </div>
     </div>
   </div>
-  <div class="card bg-footer">
-    <div class="card-header bg-footer" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h4 class="card-text"> ¿Cómo evitar las hormigas?</h4>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+        <button class="btn-link collapsed btn-card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h5 class="card-title"> ¿Cómo evitar las hormigas?</h5>
         </button>
       </h5>
     </div>
@@ -270,11 +270,10 @@
       Los problemas surgen cuando entran en nuestros hogares en busca de comida y agua, dónde el control de hormigas puede llegar a ser muy complejo      </div>
     </div>
   </div>
-  <div class="card bg-footer">
-    <div class="card-header bg-footer" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed bg-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h4 class="card-text">¿Cuándo fumigar?</h4>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+        <button class="btn-link collapsed btn-card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h5 class="card-title">¿Cuándo fumigar?</h5>
         </button>
       </h5>
     </div>

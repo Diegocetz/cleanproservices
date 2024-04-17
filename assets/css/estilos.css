@@ -3,22 +3,94 @@ li{
   list-style: none;
 }
 
+
+/* Icon 1 */
+
+.animated-icon1{
+width: 30px;
+height: 20px;
+position: relative;
+margin: auto;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon1 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 3px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+background: #0000CD;
+}
+
+.animated-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+
+
+
 /*EMPIEZA ESTILOS DE NAVBAR*/
 .navbar{
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #252525;
     letter-spacing: 0.125em; 
-    flex-direction: column;
-    padding: 0rem;
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     transition: all 0.3s ease 0s;
     display: flex;
-
+    flex-wrap: wrap;
 
 }
 
@@ -35,7 +107,7 @@ li{
 
 
 .navbar-brand img{
-    width:4.125em; 
+    width:50px; 
    margin: auto;
    padding: auto;
 }
@@ -43,31 +115,69 @@ li{
 
 /*-----BODY-----*/
   body{
-    color: black;
+   background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );     
+   /* background-image: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );  */ 
+    color: #fff;
     font-size: 1rem;
-    font-family: "Poppins"
+    font-family: "Poppins", sans-serif;
   }
 /*-----BODY-----*/
 
+.container-black{
+  background-color: #00332d25;
+  padding: 16px 16px;
+  margin: auto;
+  border-radius: 3px;
+}
+
+
+
+h2{
+  font-size: 150%;
+}
+
+h1{
+  font-size: 200%;
+}
+
+.pricing-card{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 20px 40px;
+  transition: transform 0.3s;
+
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
 
 
 /*EMPIEZA ESTILOS DE CARDS*/
   .card{
-    color: black;
+    background-color: #03192710;
+    color: #fff;
   }
 
-  .card-black{
-    background-color: #031927;
-    color: white;
+.btn-card{
+  background: none;
+    color: #fff;
+    border-radius: 0%;
+    border: none;
+}
 
-  }
+.btn-card:hover{
+  color:  black;
+}
 
-  .bg-footer{
-    background-color: white;
-    border-color: transparent;
-  }
+
+.card-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
  
-
   .card-text{
     text-align: start;
   }
@@ -94,18 +204,12 @@ li{
   /*TERMINA ESTILOS DE CARDS*/
 
 
-  .bg-dark{
-    color: white;
-    background-color:#031927;
-  }
-
-
 
   /*EMPIEZA ESTILOS DE BOTON*/
   .btn{
-    color: white;
+    color: black;
     border-radius: 0%;
-    background: #0000CD;
+    border: none;
   }
 
    
@@ -120,7 +224,7 @@ li{
   /*EMPIEZA FOOTER*/
   
   footer{
-    background-color: #031927;
+    background-color: #252525;
     display: flex;
     flex-wrap: wrap;
     letter-spacing: 0.125em; 
@@ -133,7 +237,7 @@ li{
 
   footer a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     transition: all 0.3s ease 0s;
     display: flex;
   }
@@ -146,11 +250,10 @@ li{
 }
 
   footer a:hover {
-    color: #0084ff;
+    color: blue;
 }
 
-  
-  
+
   .p-social-icon-link{
     margin-right: 24px;
   }
@@ -279,7 +382,7 @@ li{
   }
 
   .bi{
-    color: #0000CD;
+    color: #fff;
   }
   .bg-white{
     color: black;
