@@ -1,37 +1,45 @@
 
+<!-- user.php -->
+<head>
+    <!-- Otros elementos head aquí -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdmvqApAAAAANinxpuAHqFOb1UBZbHQdNnf9d0h"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit(); // Enviar el formulario después de la verificación del reCAPTCHA
+        }
+    </script>
+</head>
+
+<!-- user.php -->
+
+
 <br><br><br><br>
 <br><br>
 
-<div class="col-sm-12">
-  <img class="img-fluid" src="assets\img\contacto.jpg" alt="">
-</div>
+
 
 <div class="container container-fluid">
+  <div class="container-black w-50">
 
-<br><br>
-
-  <div class="col-sm-12">
-<h2 class="card-title display-4">
+<h1 class="card-title text-center">
    Contacto
-</h2>
+</h1>
 
-<p class="card-text">Rellena este formulario</p>
-</div>
+<p class="card-text text-center">Rellena este formulario</p>
 <br><br>
 
-<div class="row">
   <div class="col-sm">
     <label for="exampleInputPassword1">Nombre(s)</label>
     <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu nombre">
   </div>
-
+<br>
   <div class="col-sm">
     <label for="exampleInputPassword1">Apellido(s)</label>
     <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu apellido">
   </div>
-</div>
 
 <br>
+
 <div class="col-sm">
     <label for="exampleInputEmail1">Correo Electronico</label>
     <input type="email" class="form-control form-control-md" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu correo electronico">
@@ -45,7 +53,6 @@
 
   <br>
 
-<div class="row">
 <div class="col-sm">
 <label for="exampleInputPassword1">Estado</label>
 <select class="custom-select custom-select-md">
@@ -54,6 +61,7 @@
 </select>
 
 </div>
+<br>
 
 <div class="col-sm">
 <label for="exampleInputPassword1">Municipio</label>
@@ -64,7 +72,6 @@
   <option value="3">Kanasín</option>
   <option value="4">Tizimín</option>
 </select>
-</div>
 </div>
 <br>
 
@@ -80,45 +87,46 @@
 <button type="submit" class="btn">Envíar</button>
 </div>
 </div>
+</div>
 
 
 
 <br><br>
-<div class="col-sm-12">
-<h2 class="card-title display-4">
-   Contacto directo
-</h2>
-</div>
 
-<br>
-<div class="row">
-  <div class="col-sm-8">
 
-<h4 class="card-title">
+<div class="row container-black">
+  
+  <div class="col-sm">
+    
+<h1 class="card-title text-center">Contacto directo</h1><br>
+<li class="mb-2">
 <i class="bi bi-house px-2"></i>
     Calle 18 #154 15 y 13, Prado Norte. C.P 97139. Mérida, Yucatán
-</h4>
+</li>
 <br>
-<h4 class="card-title">
+<li class="mb-2">
 <i class="bi bi-envelope px-2"></i>
     cleanproservices@gmail.com
-</h4>
+</li>
 <br>
-<h4 class="card-title">
+<li class="mb-2">
 <i class="bi bi-telephone px-2"></i>
     999 243 4809
-</h4>
+</li>
 </div>
 
 <div class="col-sm">
 <img class="img-fluid" src="assets\img\logo clean.jpg" alt="">
 </div>
+</div>
 
 <br><br>
+
+<div class="container container-fluid">
 <div class="col-sm-12">
-<h2 class="card-title display-4">
+<h1 class="card-title text-center">
    Ubicación
-</h2>
+</h1>
 </div>
 </div>
 

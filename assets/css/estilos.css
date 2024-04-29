@@ -3,6 +3,35 @@ li{
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
+/*-----BODY-----*/
+body{
+ background-color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+/*-----BODY-----*/
+
+footer{
+  background-color: #27343f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  display: flex;
+}
+
+footer a:hover {
+  color: blue;
+}
 
 /* Icon 1 */
 
@@ -80,138 +109,232 @@ transform: rotate(-135deg);
 
 
 /*EMPIEZA ESTILOS DE NAVBAR*/
-.navbar{
-    background-color: #252525;
-    letter-spacing: 0.125em; 
+.navbar{ 
+  background-color: #27343f;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 1rem;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease 0s;
-    display: flex;
-    flex-wrap: wrap;
 
+.navbar a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-wrap: balance;
+  
 }
 
 .navbar li {
-    list-style: none;
     display: flex;
-    padding: 0 1.25rem;
+    text-wrap: balance;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.navbar .bi{
+  color: #fff;
 
 }
 
-.navbar a:hover {
-    color: #0000CD;
+.navbar i{  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.text-brand{
+  background-color: #0aafb2;
+  border-radius: 3px;
+  padding: 1vh;
+  color: #fff;
+}
+
+
+.text-brand:hover{
+  transition: .2s;
+background-color: #becbce;
+color: black;
+}
+
+li>.text-brand{
+  color: #fff;
+}
+
+.text-brand .bi{
+  color: #fff;
+}
+
 
 
 .navbar-brand img{
-    width:50px; 
-   margin: auto;
-   padding: auto;
+    width: 5vh;
+    height: auto;
+    object-fit: cover;
+    margin-right: 1vh;
 }
 
-
-/*-----BODY-----*/
-  body{
-   background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );     
-   /* background-image: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );  */ 
-    color: #fff;
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-  }
-/*-----BODY-----*/
+.container-custom1{
+  background-color: #27343f;
+  position: relative;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #fff;
+}
 
 .container-black{
-  background-color: #00332d25;
-  padding: 16px 16px;
-  margin: auto;
+  background-color: #f3f2f2;
+  border: solid #e3e3e3 1px;
   border-radius: 3px;
+  margin: 1vh 1vh;
+  color: black;
+  
 }
-
 
 
 h2{
   font-size: 150%;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+
 }
 
 h1{
   font-size: 200%;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
 }
 
-.pricing-card{
+.img-custom{
+  width: 25vh;
+  height: auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding-right: 4vh;
+  padding-left: 4vh;
+}
+.pricing-card{
   gap: 1rem;
   padding: 20px 40px;
   transition: transform 0.3s;
 
 }
 
+.titulo{
+  color:#fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+.text-custom2{
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content:space-evenly;
+  text-wrap: balance;
+}
+
 .card:hover{
-  transform: translateY(-5px);
+  transform: translateY(-20px);
+  transition: .5s;
 }
 
 
-/*EMPIEZA ESTILOS DE CARDS*/
-  .card{
-    background-color: #03192710;
-    color: #fff;
+.card{
+    background-color: #00000001;
+    color: black;  
   }
 
-.btn-card{
-  background: none;
-    color: #fff;
-    border-radius: 0%;
-    border: none;
-}
-
-.btn-card:hover{
-  color:  black;
-}
 
 
 .card-title{
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: bolder;
+  text-align: justify;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.card-title2{
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  text-align: justify;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
  
   .card-text{
-    text-align: start;
+  text-align: justify;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  }
+  .card-text2{
+    text-align: justify;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+   
+    }
+
+  .card-header{
+    background:none;
   }
 
   .card-group{
     margin-top: 4.375rem; /* 70px en rem */ 
+
   }
 
-  .card-deck{
-    padding: 0rem 0rem 3rem;
-    margin: 0;
-    text-align: center;
-    color: white;
-  }
+.card-deck .pricing-card{
+margin: 10vh 10vh;
+}
   
   .card li{
     list-style: none;
   }
 
+  .btn-card{
+    border: none;
+    color: black;
+  }
+
+  .btn-link:hover{
+    border: none;
+    text-decoration:none;
+  }
+  .btn-link{
+    border: none;
+    text-decoration:none;
+  }
+ 
+ 
+ 
   .img-filter{ /*FILTRO DE IMAGEN A BLANCO Y NEGRO*/
     filter: brightness(25%); 
   }
-  
-  /*TERMINA ESTILOS DE CARDS*/
-
 
 
   /*EMPIEZA ESTILOS DE BOTON*/
   .btn{
-    color: black;
+    background-color: #27343f;
+    color: #fff;
     border-radius: 0%;
     border: none;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
   }
-
    
   .btn:hover {
     background-color: #fff;
@@ -219,47 +342,7 @@ h1{
     border: solid;
     border-color: black;
   }
-  /*TERMINA ESTILOS DE BOTON*/
- 
-  /*EMPIEZA FOOTER*/
-  
-  footer{
-    background-color: #252525;
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: 0.125em; 
-    flex-direction: column;
-    padding: 0rem;
-    margin: 0rem;
-    
 
-  }
-
-  footer a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease 0s;
-    display: flex;
-  }
-  
-  
-  footer li {
-    list-style: none;
-    display: flex;
-
-}
-
-  footer a:hover {
-    color: blue;
-}
-
-
-  .p-social-icon-link{
-    margin-right: 24px;
-  }
-  
-/*TERMINA FOOTER*/
-  
   
   .carousel-inner img {
     filter: grayscale(100%); /* make all photos black and white */ 
@@ -274,122 +357,30 @@ h1{
     }
   }
   
-  
 
-
-  
-
-  
-  
-  
-  .chat-bubble {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0000CD;
+  .badge{
+    background-color: #27343f;
     color: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    padding: 1vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9999;
   }
-  
-  .chat-popup {
-    position: fixed;
-    bottom: 90px;
-    right: 30px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    display: none;
-    z-index: 9998;
-  }
-  
-  .chat-popup-content {
-    padding: 10px;
-  }
-  
-  .chat-popup-content button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #0084ff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .chat-popup-content button:hover {
-    background-color: #0056b3;
-  }
-  
-  .chat-box {
-    position: fixed;
-    bottom: 160px; /* Aumenta la distancia para dar espacio al chat */
-    right: 30px;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow-y: auto;
-    padding: 10px;
-    background-color: #f9f9f9;
-    display: none;
-    z-index: 9997;
-  }
-  
-  /* Estilos para las burbujas de chat */
-  .chat-box p {
-    margin: 5px 0;
-  }
-  
-  .chat-box p strong {
-    font-weight: bold;
-  }
-  
-  .user-message {
-    background-color: #0084ff;
-    color: #fff;
-    border-radius: 10px;
-    padding: 8px 12px;
-    max-width: 70%;
-    word-wrap: break-word;
-    float: right;
-  }
-  
-  .bot-message {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 8px 12px;
-    max-width: 70%;
-    word-wrap: break-word;
-    float: left;
-  }
-  
-  /* styles.css */
+
  
-  
-  .badge-primary{
-    background-color: #0000CD;
-  }
 
   .bi{
-    color: #fff;
+    color: #0ec6bc;
   }
-  .bg-white{
-    color: black;
-  }
+ 
 
   .fa{
-    color: #0000CD;
+    color: #0ec6bc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4vh;
+    padding-left: 4vh;
   }
 
   .container-login{
@@ -406,6 +397,10 @@ h1{
     background: none;
   }
 
+p{
+  padding-top: 1rem;
+  text-align: justify;
+}
  
 
  

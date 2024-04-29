@@ -62,62 +62,36 @@
 CUERPO DE PAGINA-->
         
 <body>
-<br><br><br><br><br><br><br>
+<br><br><br>
 
+<div class="container-custom1">
         <div class="container container-fluid">
+          <div class="display-1 text-custom2">
+<p>Clean Pro Services</p>
 
-            <div class="col-sm-12">
-    <?php if(!empty($contenido_encabezado)){
-            foreach($contenido_encabezado as $item){
-              echo '<h1 class="card-title display-4 text-center">' . $item['nombre'] . '</h2>';
-              echo '<p class="card-text text-center">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>
-    </div>         
-
-    <br><br><br><br>
-
-    <div class="row container-black">
-      <div class="col-sm-8">
-  <?php if(!empty($contenido_encabezado13)){
-            foreach($contenido_encabezado13 as $item){
-              echo '<h2 class="card-title text-center">' . $item['nombre'] . '</h2>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
-            }
-          }
-          ?>     
-  </div>
-  <div class="col-sm">
-  <img class="img-fluid rounded" src="assets\img\logo clean.jpg" alt="">
+        </div>
+              
+        </div>        
         </div>
         </div>
-
-      
-
-           
-
-        
-        
- 
-  
 
 <br><br>
+<div class="container container-fluid">
         <div class="col-lg">
-        <h1 class="card-title text-center">
+        <h1 class="card-title text-center text-brand2">
           Nuestros programas
         </h1>
         </div>
         <br>
         <br>
 
-      <div class="row container-black">
-           <div class="col-sm">
+      <div class="row">
+           <div class="col-sm-5">
       <img class="img-fluid rounded" src="assets\img\limpieza1.jpg" alt="Card image">
         </div>
 
         <div class="col-sm">
-          <h2 class="card-title">
+          <h2 class="card-title text-center card-header">
             Limpiezas exhaustivas
           </h2>   
          
@@ -133,37 +107,38 @@ CUERPO DE PAGINA-->
 
         <br><br>
 
-          <div class="row container-black">
+          <div class="row">
 
-          <div class="col-sm">
-          <img class="img-fluid rounded" src="assets\img\limpieza2.jpg" alt="Card image">
-        </div>
+          
 
         <div class="col-sm">
-        <h2 class="card-title">
+        <h2 class="card-title text-center card-header">
           Limpieza a inmuebles
         </h2>
 
         <p class="card-text">
         Una de las principales razones para limpiar el inmueble, es el cuidado de nuestra salud.  ¡Sí! cuando no se ejecutan limpiezas con frecuencia, los gérmenes y bacterias se hacen presente, ocasionando problemas respiratorios, alergias, y gripe.        </p>
-        </p>
+     
 
         <p class="card-text">
         Disponemos de modernas maquinarias de limpieza para hacer el trabajo de forma efectiva, en tiempo récord. Además de contar con operarios profesionales que saben lo que hacen
         </p>
       </div>
+      <div class="col-sm-5">
+          <img class="img-fluid rounded" src="assets\img\limpieza2.jpg" alt="Card image">
+        </div>
         </div>
         
         <br><br>
 
-        <div class="row container-black">
+        <div class="row">
 
-        <div class="col-sm">
-        <img class="img-fluid rounded" src="assets\img\limpieza3.jpg" alt="Card image">
+        <div class="col-sm-5">
+        <img class="img-fluid card-img-top" src="assets\img\limpieza3.jpg" alt="Card image">
         </div>
         
         <div class="col-sm">
-        <h2 class="card-title">
+        <h2 class="card-title text-center card-header">
           Desinfección patógena
         </h2>
 
@@ -177,78 +152,90 @@ CUERPO DE PAGINA-->
         </div>
 
         </div>
-
+        </div>
 <br><br><br><br>
-        <div class="col-sm">
-        <h1 class="text-center card-title">
+
+<div class="container-custom1">
+  <div class="container container-fluid">
+    <br><br>
+        <h1 class="text-center card-title text-brand2 pt-5 pb-5">
           ¿Cómo agendar un servicio de limpieza a domicilio?
         </h1>
-        </div>
-       <br><br>
+     
 
-       <div class="row container-black">
-           <div class="col-sm-8">
-        <h4 class="card-title">
+
+
+           <div class="card-deck">
+            <div class="card bg-white"> 
+              
+            <img class="img-fluid card-img-top" src="assets\img\agenda.png" alt="">
+
+              <div class="card-body">
+
+        <h4 class="card-title text-center">
           Agenda
         </h4>
-          <p class="card-text">
+
+          <p class="card-text2">
             Selecciona la fecha, hora y duración para tu servicio en nuestra app o web
           </p>  
+                </div>
+
         </div>
-        <div class="col-sm">
-          <img class="img-fluid rounded" src="assets\img\agenda.png" alt="">
-        </div>
-        </div>
-        <br><br>
-       <div class="row container-black">
-           <div class="col-sm-8">
-        <h4 class="card-title">
+
+        <div class="card bg-white">   
+          
+        <img class="img-fluid rounded card-img-bottom" src="assets\img\pago.png" alt="">
+
+              <div class="card-body">
+        <h4 class="card-title text-center">
           Paga
         </h4>
-        <p class="card-text">
+        <p class="card-text2">
           Realiza tu pago de forma segura con tarjeta débito/crédito, OxxoPay y SPEI
         </p>
         </div>
-        <div class="col-sm">
-          <img class="img-fluid rounded" src="assets\img\pago.png" alt="">
+
         </div>
-        </div>
- <br><br>
-        <div class="row container-black">
-           <div class="col-sm-8">
-        <h4 class="card-title">
+
+ <div class="card bg-white">   
+  
+ <img class="img-fluid" src="assets\img\clean.png" alt="">
+
+              <div class="card-body">
+
+        <h4 class="card-title text-center">
           Limpieza en camino!
         </h4>
-        <p class="card-text">
+        <p class="card-text2">
           Una vez terminado tu servicio podrás calificar a la persona asignada.
         </p>
-      
-        </div>
-        <div class="col-sm">
-          <img class="img-fluid rounded" src="assets\img\clean.png" alt="">
+              </div>
+
         </div>
         </div>
-       
  <br><br>
         <div class="d-flex justify-content-center">
         <button class="btn">Saber Más</button>
         </div>
-        
+        <br><br><br><br>
 
 
-   
+        </div>
+        </div>
 
         <br>
 <br>
+<div class="container container-fluid">
 <div class="col-sm-12">
-<h1 class="card-title text-center">Preguntas frecuentes</h1>
+<h1 class="card-title text-center text-brand2">Preguntas frecuentes</h1>
         </div>
 <br>
         <div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
         <button class="btn-link collapsed  btn-card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <h5 class="card-title">¿Cómo es el servicio de desifección?</h5>
+        <h5 class="btn-link">¿Cómo es el servicio de desifección?</h5>
         </button>
       </h5>
     </div>
@@ -261,7 +248,7 @@ CUERPO DE PAGINA-->
   <div class="card">
     <div class="card-header" id="headingTwo">
         <button class="btn-link collapsed btn-card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h5 class="card-title"> ¿Cómo evitar las hormigas?</h5>
+        <h5 class=""> ¿Cómo evitar las hormigas?</h5>
         </button>
       </h5>
     </div>
@@ -273,7 +260,7 @@ CUERPO DE PAGINA-->
   <div class="card">
     <div class="card-header" id="headingThree">
         <button class="btn-link collapsed btn-card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h5 class="card-title">¿Cuándo fumigar?</h5>
+        <h5 class="">¿Cuándo fumigar?</h5>
         </button>
       </h5>
     </div>

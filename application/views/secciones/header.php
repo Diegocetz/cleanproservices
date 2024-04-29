@@ -28,6 +28,8 @@
   <!--Fonts-->
   <link href="<?=base_url()?>assets\css\Poppins.css" rel="stylesheet">
   <link href="<?=base_url()?>assets\css\Montserrat.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat" rel="stylesheet">
+
  
 
 </head>

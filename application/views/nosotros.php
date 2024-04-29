@@ -94,11 +94,9 @@
 
 <div class="row container-black">
 
-<div class="col-sm">
-<img class="img-fluid rounded" src="assets\img\personal.jpg" alt="Card image cap">
-</div>
 
-<div class="col-sm-8">
+
+<div class="col-sm">
     <h2 class="card-title p-3">
     ¿Cómo elegimos al personal que brinda tu servicio?
     </h2>
@@ -125,7 +123,7 @@ Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
         </p>
 </div>
 
-<div class="col-sm">
+<div class="col-sm-2">
 <img class="img-fluid rounded" src="assets\img\contrato.jpg" alt="Card image cap">
 </div>
 

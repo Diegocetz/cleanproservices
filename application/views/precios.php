@@ -1,147 +1,106 @@
 <br><br><br><br><br><br><br><br>
 <div class="container container-fluid">
         <!--EMPIEZA PLAN BASICO-->  
-        <div class="col-sm-12">
-                                <h2 class="display-4">
-                                  Comienza tu plan limpieza ahora!
-                                        </h2>
-                                        <br><br>
+        <div class="col-sm">
+          <h1 class="card-title text-center">Comienza tu plan limpieza ahora!</h1>                      
                               </div>
 
         <!--SE AGRUPA LAS CARTAS-->
   <div class="card-deck">
 <!--CARTA-->
   <div class="card pricing-card">
-  <div class="card-header bg-footer">  
+  <div class="card-header">  
     <br>           
 </div>
                     <!-- CARTA CUERPO -->
                       <div class="card-body">
-                     
-
                       <h4 class="card-title text-center">
                       Básico
                       </h4>
-                      <p class="card-text text-center">
+                      <p class="card-title text-center">
                       Limpieza particular
                       </p>
-                  <br>
-                      <h2 class="card-title text-center">
-                        MX$499.99
-                      </h2>
-
+                    <p class="card-text text-center h1">MX$499.99</p>
                      <button class="btn btn-block">Comenzar plan</button>
-        <br>
-                        <p class="card-tile">
-                          El plan basico incluye:
-</p>
-                          <li class="card-text">
-                          <i class="bi bi-check2-circle px-2"></i>
-
+                        <p class="card-title">El plan basico incluye:</p>
+                          <li class="card-text"><i class="bi bi-check2-circle px-2"></i>
                             Lavado de salas</li>
-                          <li class="card-text ">
-                          <i class="bi bi-check2-circle px-2"></i>
-
+                          <li class="card-text"><i class="bi bi-check2-circle px-2"></i>
                             Lavado de colchones</li>
-                          <li class="card-text ">
-                          <i class="bi bi-check2-circle px-2"></i>
-
+                          <li class="card-text "><i class="bi bi-check2-circle px-2"></i>
                             Lavado de alfombras</li>
-                     <br>
-                    
-                             <!-- SE CIERRA CUERPO-->
                                 </div>
-                              <!-- SE CIERRA CARTA-->  
                                   </div>  
 
 
 <!--CARTA-->
 <div class="card pricing-card">        
-  <div class="card-header bg-footer">             
-   <span class="badge badge-primary m-0">El más popular</span>
+  <div class="card-header">             
+   <span class="badge">El más popular</span>
 </div>
                     <!-- CARTA CUERPO -->
                       <div class="card-body">
-
                       <h4 class="card-title text-center">
                       Profesional
                       </h4>
-
-                      <p class="card-text text-center">
+                      <p class="card-title text-center">
                       Limpieza Empresarial
                       </p>
-                  <br>
-                      <h2 class="card-title text-center font-weight-">
-                        MX$999.99
-                      </h2>
-
-                     <button class="btn btn-block">Comenzar plan</button>
-        <br>
-                        <p class="card-tile">
-                          El plan basico incluye:
-</p>
-                          <li class="card-text">
-                          <i class="bi bi-check2-circle px-2"></i>
-
-                          Desinsectación y desratización</li>
-                          <li class="card-text ">
-                          <i class="bi bi-check2-circle px-2"></i>
-
-                          Manejo integral de plagas</li>
-                          <li class="card-text ">
-                          <i class="bi bi-check2-circle px-2"></i>
-
-                          Desinfección patógena</li>
-                    
-                    
-                             <!-- SE CIERRA CUERPO-->
-                                </div>
-                              <!-- SE CIERRA CARTA-->  
-                                  </div>  
-  
-      
-                             <!-- SE CIERRA CUERPO-->
-                                </div>
+                      <p class="card-text text-center h1">
+                        MX$999.99</p>
+    <button class="btn btn-block">Comenzar plan</button>
+<p class="card-title">El plan basico incluye:</p>
+<li class="card-text">
+<i class="bi bi-check2-circle px-2"></i>
+Desinsectación y desratización</li>
+<li class="card-text "><i class="bi bi-check2-circle px-2"></i>
+Manejo integral de plagas</li>
+<li class="card-text">
+<i class="bi bi-check2-circle px-2"></i>
+Desinfección patógena</li>
+ </div>
+ </div>  
+</div>
                           
 
         
                               <div class="col-sm-12">
-                                <h2 class="display-4">
+                                <h1 class="card-title text-center">
                                   Compara nuestros planes y todas las funciones
-                                        </h2>
+                                        </h1>
                               </div>
 
                               <div class="card-group">
                                 <div class="card">
                                   <div class="card-body">
-                                 <br><br><br><br><br>
+                                 <br><br><br><br><br><br><br>
                                     <hr>
                                     <li class="card-text pt-2">
                                     Lavado de salas
                                     </li>
                                     <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     Lavado de colchones
                                     </li>
                                     <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     Lavado de alfombras
                                     </li>
                                     <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     Desinsectación y desratización
                                     </li>
                                     <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     Manejo integral de plagas
                                     </li>
                                     <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     Desinfección patógena
                                     </li>
                                     <hr>
@@ -152,7 +111,7 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h4 class="card-title">Basico</h4>
-                                    <p class="card-text">
+                                    <p class="card-text h1">
                                     MX$499.99
                                     </p>
 
@@ -160,38 +119,38 @@
                                     <hr>
                 
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                     <li class="card-text pt-3">
+                                     <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                   <li class="card-text pt-3">
+                                   <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                     <li class="card-text pt-3">
+                                     <li class="card-text ">
                                     <i class="bi bi-x-circle-fill px-2"></i>
 
                                     </li>
                                     <hr>
 
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-x-circle-fill px-2"></i>
                                     </li>
                                     <hr>
 
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-x-circle-fill px-2"></i>
                                     </li>
                                     <hr>
@@ -202,7 +161,7 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h4 class="card-title">Profesional</h4>
-                                    <p class="card-text">
+                                    <p class="card-text h1">
                                     MX$999.99
                                     </p>
 
@@ -215,31 +174,31 @@
                                                                       </li>
                                                                       <hr>
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                     <li class="card-text pt-3">
+                                     <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                  <li class="card-text pt-3">
+                                  <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>
 
 
-                                    <li class="card-text pt-3">
+                                    <li class="card-text ">
                                     <i class="bi bi-check-circle px-2"></i>
                                                                       </li>
                                                                       <hr>

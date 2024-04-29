@@ -13,7 +13,8 @@
     <br><br><br><br>
 
 
-    <div class="container container-fluid container-login">
+    <div class="container container-fluid w-25">
+        <br><br>
         <div class="card p-2">
 <br>
         <div class="col-sm-12">
@@ -24,15 +25,17 @@
     Acceda y gestione sus datos.
 </div>
 
-        <?php echo form_open('login', 'id="demo-form"'); ?>
+        <?php echo form_open('Login/login');?>
             <div class="form-group">
-                <label for="username">Nombre de usuario:</label>
-                <input type="text" id="username" name="username" class="form-control form-control-md">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" value="<?php echo set_value('email'); ?>" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <?php echo form_error('email'); ?>
             </div>
-            <br>
+            
             <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" class="form-control form-control-md">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+            <?php echo form_error('password'); ?>
             </div>
             <br>
             <div class="form-group">
@@ -40,13 +43,13 @@
                         data-sitekey="TU_RECAPTCHA_SITE_KEY" 
                         data-callback='onSubmit' 
                         data-action='submit'>Iniciar sesión</button>
+                        <?php echo $this->session->flashdata('login_error'); ?>
+        <?php form_close(); ?>
             </div>
-
-            <div class="row">
 
             <div class="col-sm"> 
             <div class="d-flex justify-content-center">
-        <a class="card-text" href="">¿No tienes una cuenta?</a>
+        <a class="" href="">¿No tienes una cuenta?</a>
     </div>
     <br>
     </div>
@@ -54,7 +57,7 @@
     <div class="col-sm">
     <div class="d-flex justify-content-center">
 
-        <a class="card-text" href="">Restablecer contraseña</a> 
+        <a class="" href="">Restablecer contraseña</a> 
 
     </div>
     </div>

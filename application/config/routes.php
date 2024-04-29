@@ -57,7 +57,16 @@ $route['principal'] = 'Principal/index';
 $route['nosotros'] = 'Principal/nosotros';
 $route['precios'] = 'Principal/precios';
 $route['contacto'] = 'Principal/contacto';
-$route['user'] = 'User/user';
+$route['index'] = 'Login/index';
+$route['change_password'] = 'Login/change_password';
+$route['dashboard'] = 'Login/dashboard';
+
+
+
+
+
+
+
 
 
 

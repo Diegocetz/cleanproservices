@@ -1,6 +1,6 @@
+<div class="container">
 
 <nav class="navbar fixed-top  navbar-expand-lg"> 
-<div class="container-fluid">
 <a class="navbar-brand" href="<?php echo base_url()?>principal">
   
     <?php
@@ -10,6 +10,10 @@
               }
             }
             ?> 
+            
+            <div class="text-brand">
+            Clean Pro Services
+          </div>
            </a>
             
 
@@ -26,7 +30,10 @@
     <ul class="navbar-nav mr-auto">  
 
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>principal">Inicio</a>
+        <a class="nav-link" href="<?php echo base_url()?>principal">
+        <i class="bi bi-house mx-2"></i>
+
+        Inicio</a>
       </li>
     
       <li class="nav-item">
@@ -39,14 +46,22 @@
           
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url()?>contacto">Contacto</a>
+          </li>
     
     </ul>
 
 
+    <li class="nav-item">
+    <a class="nav-link text-brand" href="<?php echo base_url()?>user">
+    <i class="bi bi-person mx-2"></i>
+    Login</a>  
+          </li>
 
-    <a class="mx-3" href="<?php echo base_url()?>user"><h2><i class="bi bi-person"></i></h2></a>  
-    <a class="mx-3" href="<?php echo base_url()?>user"><h2><i class="bi bi-person-add"></i></h2></a>  
-
+          <li class="nav-item">   
+    <a class="nav-link text-brand" href="<?php echo base_url()?>user">
+    <i class="bi bi-person-add mx-2"></i>
+    Register</a>  
+          </li>
 
     </div>
     </div>  
