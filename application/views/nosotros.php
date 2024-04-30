@@ -1,20 +1,15 @@
 <body>
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<div class="container container-fluid">
+<div class="container-custom1 container-fluid img-custom2">
   
-  <div class="row container-black">
+  <div class="row">
 
-
-            <div class="col-sm-8">
+  <div class="text-custom5 text-white col">
 
                <?php if(!empty($contenido_encabezado2)){
             foreach($contenido_encabezado2 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
+              echo '<h1 class="text-center">' . $item['nombre'] . '</h1>';
+              echo '<p>'. $item['contenido'] . '</p>';
             }
           }
           ?>
@@ -24,19 +19,19 @@
   <?php
               if(!empty($imagen2)){
               foreach($imagen2 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class=" img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
 
               }
             }
             ?>  
           -->
-          <img class="img-fluid rounded" src="assets\img\quienes.png" alt="">
-            </div>
+          <img class="img-fluid img-custom1" src="assets\img\quienes.png" alt="">
+            </div>       
+             </div>
         </div>
         <br>
-
-        <div class="row container-black">
-        <div class="col-sm">
+<div class="container container-fluid">
+        <div class="row">
              <!--
              
              <?php
@@ -48,29 +43,31 @@
             }
             ?>
             -->
-            <img class="img-fluid rounded" src="assets\img\meta.png" alt="">
+            <div class="col-sm">
+
+            <img class="img-fluid img-custom1" src="assets\img\meta.png" alt="">
             </div>
-            <div class="col-sm-8">
+
+            <div class="text-custom5  col">
+
               <?php if(!empty($contenido_encabezado3)){
               foreach($contenido_encabezado3 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
+              echo '<h1 class="text-center">' . $item['nombre'] . '</h2>';
+              echo '<p>'. $item['contenido'] . '</p>';
             }
           }
           ?>
           </div>
           </div>
-          <br>
-          <br>
+          
 
-
-        <div class="row container-black">
+        <div class="row">
         
-        <div class="col-sm-8">
+        <div class="text-custom5  col">
              <?php if(!empty($contenido_encabezado4)){
             foreach($contenido_encabezado4 as $item){
-              echo '<h2 class="card-title">' . $item['nombre'] . '</h2>';
-              echo '<p class="card-text">'. $item['contenido'] . '</p>';
+              echo '<h1 class="text-center">' . $item['nombre'] . '</h2>';
+              echo '<p>'. $item['contenido'] . '</p>';
             }
           }
           ?>
@@ -80,102 +77,31 @@
         <?php
               if(!empty($imagen2)){
               foreach($imagen2 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
+                echo '<img class="img-custom1 img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
 
               }
             }
             ?>
             -->
-            <img class="img-fluid rounded" src="assets\img\mision.png" alt="">
+            <img class="img-fluid img-custom1" src="assets\img\mision.png" alt="">
         </div>
         </div>
-
-<br><br><br><br><br><br>
-
-<div class="row container-black">
-
-
-
-<div class="col-sm">
-    <h2 class="card-title p-3">
-    ¿Cómo elegimos al personal que brinda tu servicio?
-    </h2>
-    
-    <p class="card-text p-3">
-      Aplicamos a los candidatos una entrevista estructurada realizada por nuestro equipo de criminólogos con el fin de detectar que la persona no sea propensa a realizar alguna actividad ilícita, tenga conexión con grupos criminales o haya cometido delitos en empleos anteriores.
-        </p>
-
 </div>
-</div>
+<br><br>
+        <div class="container-custom1 container-fluid img-custom2">
+          <div class="container">
 
 
-<br><br><br><br>
-
-<div class="row container-black">
-
-<div class="col-sm">
-<h2 class="card-title">
-Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
-</h2>
-
-<p class="card-text p-3">
-      Sólo 3 de cada 10 personas aprueban nuestro proceso, esto nos asegura que contemos solo con el mejor equipo.
-        </p>
-</div>
-
-<div class="col-sm-2">
-<img class="img-fluid rounded" src="assets\img\contrato.jpg" alt="Card image cap">
-</div>
-
-</div>
-<br><br><br><br>
-
-        <!--
-        <div class="card-deck">
-  <div class="card">
-  <img class="rounded-circle img-fluid" src="assets\img\desinfeccion.jpg" alt="card-image"> 
-         
-          <div class="card-body">
-            <h2 class="card-title">Servicio de desinfección</h2>
-
-            <p class="card-text">Sanitizamos tu oficina 1 vez por mes y te entregamos un certificado avalado por la COFEPRIS.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-        <img class="rounded-circle img-fluid" src="assets\img\desinfeccion.jpg" alt="card-image"> 
-
-  
-              <div class="card-body ">
-              <h2 class="card-title">Flexibilidad</h2>
-  
-              <p class="card-text">Solicítalo desde 3 horas a la semana. Tu oficina es única y por eso nos adaptamos a tus necesidades.
-              </p>
-          </div>
           </div>
 
-
-        <div class="card">
-             <img class="rounded-circle img-fluid" src="assets\img\desinfeccion.jpg" alt="card-image">
-              
-            
-          <div class="card-body">
-          <h2 class="card-title">Pago mensual</h2>
-          <p class="card-text">El pago y la facturación son mensuales. Aceptamos transferencia y tarjeta de crédito o débito.
-          </p>
-        </div>
-        </div>
-        </div>
-
-        -->
-        <div class="row container-black">
-        <div class="col-sm">
-<img class="img-fluid rounded" src="assets\img\familia.jpg" alt="Card image cap">
+        <div class="row">
+        <div class="text-custom5 text-white col">
+<img class="img-fluid img-custom1" src="assets\img\familia.jpg" alt="Card image cap">
       </div>
 
 
-  <div class="col-sm">
-    <h2 class="card-title text-center">
+      <div class="text-custom5 text-white col">
+    <h2>
       Contribuye al impacto social que genera nuestra comunidad
     </h2>
 
@@ -200,9 +126,9 @@ Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
 
 <br><br>
 
-<div class="row container-black">
-  <div class="col-sm">
-    <h2 class="card-title text-center">
+<div class="row">
+<div class="text-custom5 text-white col">
+    <h2>
       En los detalles, hacemos la diferencia
     </h2>
 
@@ -225,8 +151,8 @@ Capacitamos a nuestro equipo para entregar detalles especiales en tu hogar.
         </div>
 
 
-<div class="col-sm">
-<img class="img-fluid rounded" src="assets\img\personal.jpg" alt="Card image cap">
+        <div class="text-custom5 text-white col">
+<img class="img-fluid img-custom1" src="assets\img\personal.jpg" alt="Card image cap">
 
       </div>
       </div>

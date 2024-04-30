@@ -1,22 +1,5 @@
-<div class="container">
-
-<nav class="navbar fixed-top  navbar-expand-lg"> 
-<a class="navbar-brand" href="<?php echo base_url()?>principal">
-  
-    <?php
-              if(!empty($imagen4)){
-              foreach($imagen4 as $item){
-                echo '<img class="rounded-circle img-fluid" src="' . $item['ruta_imagen'] . '" alt="">';  
-              }
-            }
-            ?> 
-            
-            <div class="text-brand">
-            Clean Pro Services
-          </div>
-           </a>
-            
-
+<nav class="navbar fixed-top navbar-expand-lg"> 
+  <div class="container container-fluid">   
 <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
         data-target="#navbarToggleExternalContent"
         aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -24,51 +7,43 @@
 <div class="animated-icon1"><span></span><span></span><span></span></div>
 </button> 
 
-
     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-
-    <ul class="navbar-nav mr-auto">  
-
+      <div class="col">
+    <ul class="navbar-nav">  
     <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url()?>principal">
-        <i class="bi bi-house mx-2"></i>
-
-        Inicio</a>
+        HOME</a>
       </li>
     
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>nosotros">Nosotros</a>
+        <a class="nav-link" href="<?php echo base_url()?>nosotros">ABOUT</a>
       </li>
              
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>precios">Precios</a>
+        <a class="nav-link" href="<?php echo base_url()?>precios">PRINCING</a>
       </li>
           
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>contacto">Contacto</a>
+        <a class="nav-link" href="<?php echo base_url()?>contacto">CONTACT</a>
           </li>
-    
-    </ul>
-
+</div>
 
     <li class="nav-item">
-    <a class="nav-link text-brand" href="<?php echo base_url()?>user">
-    <i class="bi bi-person mx-2"></i>
-    Login</a>  
+    <a class="nav-link" href="<?php echo base_url()?>login">Login</a>  
           </li>
 
           <li class="nav-item">   
-    <a class="nav-link text-brand" href="<?php echo base_url()?>user">
-    <i class="bi bi-person-add mx-2"></i>
-    Register</a>  
+    <a class="nav-link" href="<?php echo base_url()?>login">Cart</a>  
           </li>
+        </ul>
 
     </div>
+    
+  </nav>
+
     </div>  
-          </div>
   
       
-  </nav>
 
 <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-light shadow-3 p-4">

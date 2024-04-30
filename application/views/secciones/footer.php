@@ -1,63 +1,84 @@
 <!-- Footer -->
-<footer>
-<hr></hr>
-    <div class="container container-fluid">    
+
+<footer class=" container-fluid">    
+       <div class="row">
+        <div class="text-custom5 col-sm-3">
+          <h1 class="display-4 text-center">Clean</h1>
+          <p class="small text-center">Pro Services</h1>
+
+        </div>
+
+
+        <div class="col">
+            <ul class="nav">
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url()?>principal">HOME</a>
+        <a class="nav-link">NUESTROS PROGRAMAS</a>
+        <a class="nav-link">METODO DE PAGO</a>
         
-            <ul class="nav justify-content-center">
+
+        </li>
+     
         <li class="nav-item">
-        <a class="nav-link " href="<?php echo base_url()?>nosotros">Nosotros</a>
+        <a class="nav-link " href="<?php echo base_url()?>nosotros">ABOUT</a>
+        <a class="nav-link">¿QUIENES SOMOS?</a>
+        <a class="nav-link">UNETE AL EQUIPO</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link " href="<?php echo base_url()?>contacto">Contacto</a>
-        </li>
+        <a class="nav-link" href="<?php echo base_url()?>precios">PRINCING</a>
+        <a class="nav-link" href="<?php echo base_url()?>precios">FAQS - PREGUNTAS FRECUENTES</a>
+        <a class="nav-link" href="<?php echo base_url()?>precios">PLANES</a>
 
-        <li class="nav-item">
-        <a class="nav-link" href="#">Cotizar</a>
+       
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url()?>contacto">CONTACT</a>
+        <a class="nav-link" href="<?php echo base_url()?>contacto">CONTACTO DIRECTO</a>
+        <a class="nav-link" href="<?php echo base_url()?>contacto">LOCALIZACIÓN</a>
+
+        </li>
+  </ul>
+       </div>
+       </div>
+    
+       <br><br>
+
+      
+       <div class="row">
+        <div class="col-sm-9">
+        </div>
+
+        <div class="col">
+       <ul class="nav">
+            <li class="nav-item">
+            <a href="https://www.facebook.com/" role="button">
+              <i class="bi bi-facebook fa-2x"></i>
+            </a>
+            </li>
+
+            
+            
+            <li class="nav-item">
+            <a href="https://twitter.com/" role="button">
+              <i class="bi bi-twitter fa-2x"></i>
+            </a>
+            </li>
+            <li class="nav-item">
+
+            <a href="https://www.instagram.com/" role="button">
+               <i class="bi bi-instagram fa-2x"></i>
+              </a>
+              </li>
+              <li class="nav-item">
+
+              <a href="https://www.instagram.com/" role="button">
+               <i class="bi bi-threads fa-2x"></i>
+              </a>
+              </li>
             </ul>
 
-</div>
-
-
-<hr></hr>
-        
-          <div class=" containercontainer-fluid">
-            <div class="d-flex justify-content-center">
-           
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/"
-               class="p-social-icon-link"
-               
-               role="button"
-               ><i class="fa fa-facebook fa-2x"></i
-              ></a>
-
-            <!-- Twitter -->
-            <a
-                href="https://twitter.com/"
-                class="p-social-icon-link"
-              
-                role="button"
-               ><i class="fa fa-twitter fa-2x"></i
-              ></a>
-
-            <!-- Instagram -->
-            <a
-               href="https://www.instagram.com/"
-                  class="p-social-icon-link"
-
-               role="button"
-               >
-               <i class="fa fa-instagram fa-2x"></i
-              ></a>
-
-
-
-
-
-              
-          </div>
+        </div>
           
         </div>
        
@@ -68,17 +89,28 @@
 
 
 
-    </div>
-    <hr></hr>
-    <!-- Copyright -->
-    <div class=" container container-fluid">
-            <div class="d-flex justify-content-center">
-    <p class="text-center small">
-      © 2024 Copyright:
-      <a href="<?php echo base_url()?>principal">cleanproservices.com</a>
-    </p>
+        <ul class="nav col small">
+        <li class="nav-item">
+          <a class="nav-link">
+      ©cleanproservices. All Rights Reserved.
+          </a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link">
+        Terms of Service
+          </a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link">
+        Privacy Policy
+          </a>
+        </li>
+
     
-</div>
+    
+</ul>
 </div>
 
 </footer>

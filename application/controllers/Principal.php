@@ -60,10 +60,11 @@ $this->load->view('secciones/header', $datos);
 		$datos['imagen4']=$this->m->consulta_imagen("6");
 
 
-		$this->load->view('secciones/header');
+
+		$this->load->view('secciones/header', $datos);
 		$this->load->view('nosotros',$datos);
-		$this->load->view('secciones/footer');
-		$this->load->view('secciones/head');
+		$this->load->view('secciones/head',$datos);
+		$this->load->view('secciones/footer',$datos);
 
 
 	}
@@ -79,10 +80,12 @@ $this->load->view('secciones/header', $datos);
 		$datos['imagen4']=$this->m->consulta_imagen("6");
 
 		
-		$this->load->view('secciones/header');
+	
+
+		$this->load->view('secciones/header', $datos);
 		$this->load->view('precios',$datos);
-		$this->load->view('secciones/footer');
-		$this->load->view('secciones/head');
+		$this->load->view('secciones/head',$datos);
+		$this->load->view('secciones/footer',$datos);
 
 
 	}
@@ -121,10 +124,11 @@ $this->load->view('secciones/header', $datos);
             // Captcha no verificado, mostrar un mensaje de error o realizar otra acción
         }
 
-		$this->load->view('secciones/header');
+
+		$this->load->view('secciones/header', $datos);
 		$this->load->view('contacto',$datos);
-		$this->load->view('secciones/footer');
-		$this->load->view('secciones/head');
+		$this->load->view('secciones/head',$datos);
+		$this->load->view('secciones/footer',$datos);
 
 	}
 
