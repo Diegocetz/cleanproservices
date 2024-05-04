@@ -132,7 +132,30 @@ $this->load->view('secciones/header', $datos);
 
 	}
 
+
+
+
+public function admin()
+{
+	$datos['contenido_encabezado6']=$this->m->consulta_contenido("6");
+	$datos['contenido_encabezado7']=$this->m->consulta_contenido("7");
+	$datos['contenido_encabezado8']=$this->m->consulta_contenido("8");
+	$datos['contenido_encabezado9']=$this->m->consulta_contenido("9");
+	$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
+
+	$datos['imagen4']=$this->m->consulta_imagen("6");
+
+	
+
+
+	$this->load->view('secciones/header', $datos);
+	$this->load->view('admin',$datos);
+
+
 }
+}
+
+
  
 	
 

@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['principal'] = 'Principal/index';
+$route['admin'] = 'Principal/admin';
 $route['nosotros'] = 'Principal/nosotros';
 $route['precios'] = 'Principal/precios';
 $route['contacto'] = 'Principal/contacto';
