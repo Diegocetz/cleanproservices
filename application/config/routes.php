@@ -58,9 +58,12 @@ $route['admin'] = 'Principal/admin';
 $route['nosotros'] = 'Principal/nosotros';
 $route['precios'] = 'Principal/precios';
 $route['contacto'] = 'Principal/contacto';
-$route['index'] = 'Login/index';
-$route['change_password'] = 'Login/change_password';
-$route['dashboard'] = 'Login/dashboard';
+$route['news/(:any)'] = 'news/view/$1';
+$route['news'] = 'news';
+$route['(:any)'] = 'pages/view/$1';
+$route['default_controller'] = 'pages/view';
+$route['AJAX'] = 'Principal/crear';
+
 
 
 

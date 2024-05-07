@@ -7,10 +7,10 @@ a {
 }
 
 body {
-  background-color: #23201A;
+  background-color: #fff;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: black;
 }
 
 .animated-icon1 {
@@ -184,6 +184,13 @@ footer a:hover {
 .card {
   background-color: #23201A;
   border: solid 2px #fff;
+  color: #fff;
+ 
+}
+
+.card-deck{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .card-body {

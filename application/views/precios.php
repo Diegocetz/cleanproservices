@@ -1,8 +1,5 @@
-<div class="container-custom1 img-custom2">
    <div class="container container-fluid">
-
-      <!--EMPIEZA PLAN BASICO-->
-      <br>
+      <br><br><br><br>
       <div class="text-custom5 col">
          <div class="text-center">
             <h2> Comienza tu plan limpieza ahora!</h2>
@@ -70,11 +67,11 @@
          </div>
       </div>
    </div>
-</div>
 <br><br>
+<div class="container-custom1">
 <div class="container container-fluid">
    <div class="table-responsive-sm">
-      <table class="table  table-custom1">
+      <table class="table  table-custom1 text-white">
          <thead>
             <tr>
                <th scope="col">#</th>
@@ -131,6 +128,7 @@
       </table>
    </div>
 </div>
+</div>
 <br><br>
 <div class="container container-fluid">
    <div id="accordion">
@@ -140,40 +138,49 @@
       <div class="card color-custom2">
          <div class="card-header text-custom6" id="headingOne">
             <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="collapse" aria-controls="collapseOne">
-               <h4>¿Qué incluye la suscripción?</h4>
+            <?php foreach ($question_1 as $news_item): ?>
+               <h4><?php echo $news_item['title']; ?></h4>
             </button>
          </div>
          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body text-custom6">
-               <p>Todos nuestros planes incluyen los servicios de limpieza sin cargos adicionales.</p>
+            <p><?php echo $news_item['text']; ?></p>
             </div>
          </div>
       </div>
-      <div class="card color-custom2">
+      <?php endforeach; ?>
+
+     <div class="card color-custom2">
          <div class="card-header text-custom6" id="headingTwo">
-            <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               <h4>¿Cuál es la diferencia entre el plan estándar y el plan personalizado?</h4>
+            <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="collapse" aria-controls="collapseTwo">
+            <?php foreach ($question_2 as $news_item): ?>
+               <h4><?php echo $news_item['title']; ?></h4>
             </button>
          </div>
          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body text-custom6">
-               <p>Los servicios personalizados es para empresas que desea gestionar los servicios de limpieza de acorde a sus necesidades, por otro lado, el plan estandar solo cuenta con los servicios del plan.</p>
+            <p><?php echo $news_item['text']; ?></p>
             </div>
          </div>
       </div>
+      <?php endforeach; ?>
+
       <div class="card color-custom2">
          <div class="card-header text-custom6" id="headingThree">
-            <button class="btn-card btn-link collapsed " data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-               <h4>¿Clean Pro Services esta disponible en mi cuidad?</h4>
+            <button class="btn-card btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="collapse" aria-controls="collapseThree">
+            <?php foreach ($question_3 as $news_item): ?>
+               <h4><?php echo $news_item['title']; ?></h4>
             </button>
          </div>
          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body text-custom6">
-               <p>Tenemos cobertura en el sur de País (Campeche, Quintana Roo y Yucatán)</p>
+            <p><?php echo $news_item['text']; ?></p>
             </div>
          </div>
       </div>
    </div>
-
-   <!--SE CIERRA CONTENEDOR-->
 </div>
+      <?php endforeach; ?>
+      <br><br>
+
+

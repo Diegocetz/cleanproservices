@@ -12,6 +12,7 @@
 </head>
 
 <!-- user.php -->
+<div class="container-custom1">
 <div class="container container-fluid">
    <br><br><br><br><br><br>
    <div class="card-group">
@@ -67,8 +68,8 @@
       </div>
    </div>
 </div>
+</div>
 <br><br><br><br>
-<div class="container-custom1 img-custom2">
    <div class="container container-fluid w-50">
       <div class="card">
          <div class="card-header">
@@ -81,4 +82,4 @@
          </div>
       </div>
    </div>
-</div>
+   <br><br>
