@@ -25,6 +25,7 @@
   <!--ajax-->
   <script src="<?=base_url()?>assets\js\jquery.min.js"></script>
 
+
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

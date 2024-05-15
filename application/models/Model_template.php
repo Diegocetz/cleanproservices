@@ -35,5 +35,5 @@ class Model_template extends CI_Model{
             return false;
         }
     }
-
+    
 }

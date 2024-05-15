@@ -50,7 +50,7 @@
                </p>
                <h2 class="text-center">
                   MX$999.99</h2>
-               <button class="btn btn-block">Comenzar plan</button>
+                  <button class="btn btn-block">Comenzar plan</button>
                <br>
                <p>El plan basico incluye:</p>
                <li>

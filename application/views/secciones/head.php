@@ -11,7 +11,7 @@
       <div class="col">
     <ul class="navbar-nav">  
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>principal">
+        <a class="nav-link" href="<?php echo base_url()?>">
         HOME</a>
       </li>
     

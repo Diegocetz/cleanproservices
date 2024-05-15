@@ -341,13 +341,14 @@ transition: .5s;
   filter: brightness(25%);
 }
 
-.btn {
+/*.btn {
   background: none;
   color: #ffffff;
   border: solid 2px #fff;
   padding-bottom: 1vh;
   padding-top: 1vh;
 }
+*/
 
 .btn:hover {
   background-color: #fff;
@@ -439,7 +440,6 @@ label {
   padding-top: 10px;
 }
 
-.form-control,
 .custom-select {
   background: none;
   border: solid 1px #fff;

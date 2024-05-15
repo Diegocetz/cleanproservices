@@ -1,33 +1,34 @@
 
-
 	<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+	
 	class Principal extends CI_Controller {
 	
 			public function __construct()
 			{
-					parent::__construct();
-					$this->load->model('model_template');
-					$this->load->helper('url_helper');
+					parent::__construct();							
+							$this->load->model('model_template');
+
+					$this->load->helper('url');	
+
 			}
 	
 			public function index()
-			{
+			{				
+				
 					$data['program_1'] = $this->model_template->get_content('1');
 					$data['program_2'] = $this->model_template->get_content('2');
 					$data['program_3'] = $this->model_template->get_content('3');
 					$data['character_1'] = $this->model_template->get_content('4');
 					$data['character_2'] = $this->model_template->get_content('5');
-					$data['character_3'] = $this->model_template->get_content('6');
-
-
-
-
+					$data['character_ 3'] = $this->model_template->get_content('6');
 					$data['title'] = 'ESTE ES EL TITULO';
-			
+
+
 					$this->load->view('secciones/header', $data);
 					$this->load->view('secciones/head', $data);
 					$this->load->view('principal', $data);
-					$this->load->view('secciones/footer');
+					$this->load->view('secciones/footer', $data);
 			}
 		
 			public function nosotros()
@@ -38,11 +39,6 @@
 					$data['character_3'] = $this->model_template->get_content_about('3');
 					$data['character_4'] = $this->model_template->get_content_about('4');
 					$data['character_5'] = $this->model_template->get_content_about('5');
-
-
-
-
-
 					$data['title'] = 'ESTE ES EL TITULO';
 			
 					$this->load->view('secciones/header', $data);
@@ -112,46 +108,5 @@
 
 
 
-public function admin()
-{
-	$datos['contenido_encabezado6']=$this->m->consulta_contenido("6");
-	$datos['contenido_encabezado7']=$this->m->consulta_contenido("7");
-	$datos['contenido_encabezado8']=$this->m->consulta_contenido("8");
-	$datos['contenido_encabezado9']=$this->m->consulta_contenido("9");
-	$datos['contenido_encabezado10']=$this->m->consulta_contenido("10");
-
-	$datos['imagen4']=$this->m->consulta_imagen("6");
-
-	
-
-
-	$this->load->view('secciones/header', $datos);
-	$this->load->view('admin',$datos);
-
-
-}
-public function crear()
-    {
-        if (!$this->input->is_ajax_request()) {
-            redirect('404');
-        } else {
-            $respuestas         = array();
-            $input              = $this->input->post("input_valor");
-            $respuestas['html'] = "<div>Hola " . $input . "</div>";
-            
-            echo json_encode($respuestas);
-            exit();
-        }
-        $datos['titulo'] = 'Codeigniter con ajax';
-
-        $this->load->view('secciones/header', $datos);
-        $this->load->view('ajax', $datos);
-        $this->load->view('secciones/footer');
-    }
-}
-
-
- 
-	
-
+	}
 

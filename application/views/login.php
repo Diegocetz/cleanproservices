@@ -1,15 +1,13 @@
 <!-- user.php -->
-<head>
     <!-- Otros elementos head aquí -->
+    <!--
     <script src="https://www.google.com/recaptcha/api.js?render=6LdmvqApAAAAANinxpuAHqFOb1UBZbHQdNnf9d0h"></script>
     <script>
         function onSubmit(token) {
             document.getElementById("demo-form").submit(); // Enviar el formulario después de la verificación del reCAPTCHA
         }
     </script>
-</head>
 
-<!-- user.php -->
     <br><br><br><br>
 
 
@@ -25,46 +23,76 @@
     Acceda y gestione sus datos.
 </div>
 
-        <?php echo form_open('Login/login');?>
-            <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" value="<?php echo set_value('email'); ?>" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-            <?php echo form_error('email'); ?>
-            </div>
-            
-            <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
-            <?php echo form_error('password'); ?>
-            </div>
-            <br>
-            <div class="form-group">
-                <button class="g-recaptcha btn btn-block" 
-                        data-sitekey="TU_RECAPTCHA_SITE_KEY" 
-                        data-callback='onSubmit' 
-                        data-action='submit'>Iniciar sesión</button>
-                        <?php echo $this->session->flashdata('login_error'); ?>
-        <?php form_close(); ?>
-            </div>
 
-            <div class="col-sm"> 
-            <div class="d-flex justify-content-center">
-        <a class="" href="">¿No tienes una cuenta?</a>
-    </div>
-    <br>
-    </div>
+    -->
 
-    <div class="col-sm">
-    <div class="d-flex justify-content-center">
+      
 
-        <a class="" href="">Restablecer contraseña</a> 
+<!--
+    <h2><?php echo $title; ?></h2>
 
-    </div>
-    </div>
+<?php echo validation_errors(); ?>
+
+<?php echo form_open('news/create'); ?>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" /><br />
+
+    <label for="text">Text</label>
+    <textarea name="text"></textarea><br />
+
+    <input type="submit" name="submit" value="Create news item" />
+
+</form>
     
- </div>
-    </div>
-    </div>
-        <?php echo form_close(); ?>
-        <br><br><br><br><br>
-   
+    <html>
+<head>
+        <title><?php echo $title;?></title>
+</head>
+<body>
+        <h1><?php echo $heading;?></h1>
+
+        <h3>My Todo List</h3>
+
+        <ul>
+        <?php foreach ($todo_list as $item):?>
+
+                <li><?php echo $item;?></li>
+
+        <?php endforeach;?>
+        </ul>
+
+</body>
+</html>
+        -->
+        <?=heading($title, 2);?>
+<?php foreach($results as $result): ?>  
+  <?=form_open('template/add'); ?>     
+    <div class="template">  
+     <p><?=$result->marca;?></p>
+     
+  <div class="image"><?=img('images/'.$result->imagen);?></div>
+ 
+  <div class="detalles"><?='Pantalla: '.$result->pantalla.br(1).'Ram: '.$result->ram.br(1).
+                           'Procesador: '.$result->procesador.br(1).'Disco Duro: '.$result->disco_duro;?></div>
+              
+  <div class="price"><?='Precio: '.'$'.$result->precio;?></div>
+
+        <div class="option">
+             <?php if($result->valores):?>
+               
+                    <?=form_label($result->opcion);?>
+                    <?=form_dropdown($result->opcion,$result->valores);?>
+
+                <?php endif; ?>
+              
+            <?=form_hidden('id', $result->id); ?>
+            <?=form_hidden('segment', $this->uri->segment(3));?>
+            <?=form_submit('action', 'Comprar'); ?>
+      </div>      
+  </div><!-- End Products -->
+            <?=form_close(); ?>
+  <?php endforeach; ?>   
+           
+<div id="pagination"><?=$this->pagination->create_links();?></div>
+
