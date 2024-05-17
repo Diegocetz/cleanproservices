@@ -10,20 +10,35 @@
                     $this->load->helper('form');
 
 			}
-            public function carrito(){
-                $data['1'] = $this->model_carrito->cart_delete();
-                /*$data['update'] = $this->model_carrito->cart_update();
-                $data['delete'] = $this->model_carrito->cart_delete();
-*/
 
-                $this->load->view('carrito', $data);
-
-            }
+        public function add_to_cart() {
+            $data = array(
+                'id'    => $this->input->post('id'),
+                'qty'   => $this->input->post('qty'),
+                'price' => $this->input->post('price'),
+                'name'  => $this->input->post('name')
+            );
+    
+            $this->cart->insert($data);
+            redirect(base_url('principal/carrito'));
+        }
+    
+        public function remove_from_cart($rowid) {
+            $this->cart->remove($rowid);
+            redirect('Carrito/carrito');
+        }
+        
+        
+    
+        public function carrito() {
+            $data['cart_items'] = $this->cart->contents();
+            $this->load->view('secciones/header');
+            $this->load->view('carrito', $data);
+            $this->load->view('secciones/footer');
         }
 
 
-
- 
+    }
 	
 
 

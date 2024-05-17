@@ -1,98 +1,102 @@
-<!-- user.php -->
-    <!-- Otros elementos head aquí -->
-    <!--
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdmvqApAAAAANinxpuAHqFOb1UBZbHQdNnf9d0h"></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit(); // Enviar el formulario después de la verificación del reCAPTCHA
-        }
-    </script>
-
-    <br><br><br><br>
+<body>
+<br><br><br><br><br>
 
 
-    <div class="container container-fluid w-25">
-        <br><br>
-        <div class="card p-2">
-<br>
-        <div class="col-sm-12">
-        <h2 class="card-title text-center">Iniciar sesión</h2>
+<?php if($this->session->flashdata('status')) : ?>
+<div class="alert alert-success">
+    <?= $this->session->flashdata('status'); ?>
+</div>
+<?php endif; ?>
+
+
+<div class="container container-fluid">
+<div class="card-group">
+    <div class="card">
+        <img class="img-fluid" src="assets\img\logo clean.jpg" alt="">
     </div>
-<br>
-    <div class="alert alert-primary" role="alert">
-    Acceda y gestione sus datos.
+<div class="card">
+    <div class="card-body">
+        <h4>Log in</h4>
+<form action="<?php echo base_url('login') ?>" method="POST" id="formulario">
+
+<div class="form-group" id="email">
+<label for="exampleInputEmail1" class="col-sm col-form-label"><p>Email Address</p></label>
+<div class="col-sm-12">
+<input type="email" name="email" class="form-control" value="<?php echo set_value('email'); ?>"/>
+<div class="invalid-feedback">
+    el correo es vacio
+</div>
+</div>
+</div>
+
+<div class="form-group" id="password">
+<label for="exampleInputPassword1" class="col-sm col-form-label"><p>Password</p></label>
+<div class="col-sm-12">
+<input type="password" name="password" class="form-control" value="<?php echo set_value('password'); ?>"/>
+
+<div class="invalid-feedback">
+la contraseña se encuentra vacia
+</div>
+</div>
 </div>
 
 
-    -->
+<small>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</small>
+<br><br>
+<div class="form-group col-sm-12">
+<input type="submit" class="col-sm col-form-label btn btn-primary" value="Log in to account" />
+</div>
+<div class="form-group" id="alert">
 
-      
-
-<!--
-    <h2><?php echo $title; ?></h2>
-
-<?php echo validation_errors(); ?>
-
-<?php echo form_open('news/create'); ?>
-
-    <label for="title">Title</label>
-    <input type="text" name="title" /><br />
-
-    <label for="text">Text</label>
-    <textarea name="text"></textarea><br />
-
-    <input type="submit" name="submit" value="Create news item" />
-
+</div>
+</div>
+</div>
+</div>
+</div>
 </form>
-    
-    <html>
-<head>
-        <title><?php echo $title;?></title>
-</head>
-<body>
-        <h1><?php echo $heading;?></h1>
-
-        <h3>My Todo List</h3>
-
-        <ul>
-        <?php foreach ($todo_list as $item):?>
-
-                <li><?php echo $item;?></li>
-
-        <?php endforeach;?>
-        </ul>
 
 </body>
-</html>
-        -->
-        <?=heading($title, 2);?>
-<?php foreach($results as $result): ?>  
-  <?=form_open('template/add'); ?>     
-    <div class="template">  
-     <p><?=$result->marca;?></p>
-     
-  <div class="image"><?=img('images/'.$result->imagen);?></div>
- 
-  <div class="detalles"><?='Pantalla: '.$result->pantalla.br(1).'Ram: '.$result->ram.br(1).
-                           'Procesador: '.$result->procesador.br(1).'Disco Duro: '.$result->disco_duro;?></div>
-              
-  <div class="price"><?='Precio: '.'$'.$result->precio;?></div>
 
-        <div class="option">
-             <?php if($result->valores):?>
-               
-                    <?=form_label($result->opcion);?>
-                    <?=form_dropdown($result->opcion,$result->valores);?>
 
-                <?php endif; ?>
-              
-            <?=form_hidden('id', $result->id); ?>
-            <?=form_hidden('segment', $this->uri->segment(3));?>
-            <?=form_submit('action', 'Comprar'); ?>
-      </div>      
-  </div><!-- End Products -->
-            <?=form_close(); ?>
-  <?php endforeach; ?>   
-           
-<div id="pagination"><?=$this->pagination->create_links();?></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--
+<script>
+    (function($){
+        $("#formulario").submit(function(ev){
+            $("#alert").html("");
+            $.ajax({
+                url: 'login/validate',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(err){
+                    var json = JSON.parse(err);
+                    window.location.replace(json.url);
+                },
+                statusCode: {
+                400: function(xhr){
+                        $("#email > input").removeClass('is-invalid');
+                        $("#password > input").removeClass('is-invalid');
+
+                    var json = JSON.parse(xhr.responseText);
+                if(json.email.length != 0){
+                    $("#email > div").html(json.email);
+                    $("#email > input").addClass('is-invalid');
+                      }
+                if(json.password.length != 0){
+                    $("#password > div").html(json.password);
+                    $("#password > input").addClass('is-invalid');    
+                    }
+                
+                },
+                401: function(xhr){
+                    var json = JSON.parse(xhr.responseText);
+                    $("#alert").html('<div class="alert alert-danger" role="alert">'+ json.msg +'</div>')
+                }
+            }
+            });
+            ev.preventDefault();
+        });
+    })(jQuery);
+</script>
