@@ -12,7 +12,6 @@
         }		
             public function create() {
                 
-                $data['program_1'] = $this->model_template->get_content('1');
             
                 $this->form_validation->set_rules(
                     'username', 'Username',
@@ -31,7 +30,7 @@
             
                 if ($this->form_validation->run() === FALSE)  //   Verificamos si el usuario superó la validación
                 {
-                    $this->load->view('secciones/header', $data);
+                    $this->load->view('secciones/header');
                     $this->load->view('registro');       //   En caso que no, volvemos a presentar la pantalla de login
 
 
@@ -41,7 +40,7 @@
                     $this->load->model('user_model');
                     $this->user_model->set_news();
                     $this->load->view('formsuccess');
-                    $this->load->view('secciones/header', $data);
+                    $this->load->view('secciones/header');
 
                 }
                 

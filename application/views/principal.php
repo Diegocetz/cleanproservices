@@ -1,6 +1,6 @@
 <body>
 
-   <div class="container-custom1 img-custom2">
+   <div class="img-custom2">
       <div class="container container-fluid">
                   <div class="text-custom5">
                   <h1 class="text-center text-white"><?= $title; ?></h1>
@@ -59,7 +59,7 @@
    <?php endforeach; ?>
 
    <br><br>
-   <div class="container-custom1 container-fluid ">
+   <div class="container-fluid ">
       <div class="container">
          <div class="card-deck">
             <div class="card">

@@ -1,8 +1,8 @@
 <!-- Footer -->
 
-<footer class=" container-fluid">    
+<footer class=" container-fluid bg-primary">    
        <div class="row">
-        <div class="text-custom5 col-sm-3">
+        <div class="text-custom5 text-white col-sm-3">
           <h1 class="display-4 text-center">Clean</h1>
           <p class="small text-center">Pro Services</h1>
 
@@ -13,16 +13,12 @@
             <ul class="nav">
         <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url()?>principal">HOME</a>
-        <a class="nav-link">NUESTROS PROGRAMAS</a>
-        <a class="nav-link">METODO DE PAGO</a>
         
 
         </li>
      
         <li class="nav-item">
         <a class="nav-link " href="<?php echo base_url()?>nosotros">ABOUT</a>
-        <a class="nav-link">¿QUIENES SOMOS?</a>
-        <a class="nav-link">UNETE AL EQUIPO</a>
         </li>
 
         <li class="nav-item">
@@ -91,18 +87,18 @@
 
         <ul class="nav col small">
         <li class="nav-item">
-          <a class="nav-link">
+          <a class="nav-link text-white">
       ©cleanproservices. All Rights Reserved.
           </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item text-white">
         <a class="nav-link">
         Terms of Service
           </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item text-white">
         <a class="nav-link">
         Privacy Policy
           </a>

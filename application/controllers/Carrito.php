@@ -20,15 +20,19 @@
             );
     
             $this->cart->insert($data);
-            redirect(base_url('principal/carrito'));
+            redirect(base_url('Carrito/carrito'));
         }
     
         public function remove_from_cart($rowid) {
             $this->cart->remove($rowid);
-            redirect('Carrito/carrito');
+            redirect(base_url('Carrito/carrito'));
         }
-        
-        
+        public function insert_from_cart(){
+        $this->load->model('model_carrito');
+        $this->user_model->set_news();
+        $this->load->view('formsuccess');
+        $this->load->view('secciones/header',);
+        }
     
         public function carrito() {
             $data['cart_items'] = $this->cart->contents();

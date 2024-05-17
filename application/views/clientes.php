@@ -1,4 +1,4 @@
-     <head>
+<head>
  <!-- Scripts -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -20,34 +20,18 @@
     <div class="login-wrapper col-sm-12 mb-4">
     <form id="form_agregar" action="<?php echo base_url('Principal/insert'); ?>" method="post">
        
-  <center>  <h1 class="title " style="color: black;">Administración de personal</h1></center>
-        <div class="form-group form-row">
-            <div class="lable col-sm-4 mb-4">
-                <label for="nombre" class="labels">Nombre:</label>
-                <input  class="ipt_forms" name="nombre" id="nombre_edit">
-            </div>
-            <div class="form-column col-sm-4 mb-4">
-                <label for="nombre2" class="labels">Nombre2:</label>
-                <input  class="ipt_forms" name="nombre2" id="nombre2_edit">
-            </div>
-            <div class="form-column col-sm-4 mb-4">
-                <label for="apellido_paterno" class="labels">Apellido Paterno:</label>
-                <input  class="ipt_forms" name="apellido_paterno" id="apellido_paterno_edit">
-            </div>
-            <div class="form-column col-sm-4 mb-4">
-                <label for="apellido_materno" class="labels">Apellido Materno:</label>
-                <input  class="ipt_forms" name="apellido_materno" id="apellido_materno_edit">
-            </div>
-        </div>
+  <center>  <h1 class="title " style="color: black;">Administración de Usuarios</h1></center>
         <div class="form-row">
             <div class="form-column col-sm-4 mb-4">
-                <label for="procedencia" class="labels">Procedencia:</label>
-                <select name="procedencia" class="ipt_forms" id="procedencia_edit">
-                    <option value="">Selecciona una opción</option>
-                    <option value="Interno">Interno</option>
-                    <option value="Externo">Externo</option>
-                </select>
+                <label for="username" class="labels">username:</label>
+                <input  class="ipt_forms" name="username" id="username_edit">
             </div>
+            <div class="form-column col-sm-4 mb-4">
+                <label for="email" class="labels">email:</label>
+                <input  class="ipt_forms" name="email" id="email_edit">
+            </div>
+        </div>
+       
             <div class="form-column col-sm-4 mb-4">
                 <label for="id_rango" class="labels">Rol:</label>
                 <select name="id_rango" class="ipt_forms" id="id_rango_edit">
@@ -58,8 +42,9 @@
                     <option value="4">Junior</option>
                     <option value="5">Enginner</option>
                     <option value="6">Consultor</option>
+                    <option value="7">Usuario</option>
                     <?php foreach ($roles as $rol): ?>
-                        <!-- Comprobamos si el rol actual coincide con el rol del personal -->
+                        <!-- Comprobamos si el rol actual coincide con el rol ded -->
                         <?php $selected = ($rol['nombre_rango'] === $rol_nombre) ? 'selected' : ''; ?>
                         <option value="<?php echo $rol['id_rango']; ?>" <?php echo $selected; ?>><?php echo $rol['nombre_rango']; ?></option>
                     <?php endforeach; ?>
@@ -67,8 +52,8 @@
             </div>
             <div class="form-column col-sm-4 mb-4">
                 <input type="submit" class="btn_guardar" value="Guardar">
-                <input type="hidden" id="id_personal_edit" name="id_personal_edit">
-                <input type="hidden" id="id_personal_edit" name="id_personal_edit">
+                <input type="hidden" id="id_edit" name="id_edit">
+                <input type="hidden" id="id_edit" name="id_edit">
             </div>
         </div>
         <input type="hidden" name="status" value="1"> 
@@ -82,12 +67,9 @@
                       
                     <thead>
                         <tr>
-                            <th scope="col">1er Nombre</th>
-                            <th scope="col">2do Nombre</th>
-                            <th scope="col">Apellido paterno</th>
-                            <th scope="col">Apellido materno</th>
+                            <th scope="col">username</th>
+                            <th scope="col">email/th>
                             <th scope="col">Rol</th>
-                            <th scope="col">Procedencia</th>
                             <th scope="col">Acciones</th>
                         </tr>
                     </thead>
@@ -95,17 +77,14 @@
                         <?php if (!empty($query)): ?>
                             <?php foreach ($query as $item): ?>
                                 <tr>
-                                    <td><?php echo $item['nombre']; ?></td> 
-                                    <td><?php echo $item['nombre2']; ?></td> 
-                                    <td><?php echo $item['apellido_materno']; ?></td>
-                                    <td><?php echo $item['apellido_paterno']; ?></td>
-                                    <td><?php echo $item['nombre_rango']; ?></td>
-                                    <td><?php echo $item['procedencia']; ?></td>
+                                    <td><?php echo $item['username']; ?></td> 
+                                    <td><?php echo $item['email']; ?></td> 
+                                    <td><?php echo $item['id_rango']; ?></td>
                                     <td>
                                      
-                                        <button  class="btn btn-warning" data-id="<?php echo $item['id_personal']; ?>">
+                                        <button  class="btn btn-warning" data-id="<?php echo $item['id']; ?>">
                                         <i class="bi bi-trash"></i></button>
-                                        <button class="btn btn-success" data-id="<?php echo $item['id_personal']; ?>" >
+                                        <button class="btn btn-success" data-id="<?php echo $item['id']; ?>" >
                                         <i class="bi bi-pencil-square"></i>
                                         </button>
                                     </td>
@@ -134,11 +113,11 @@
 
             function eliminar(id) {
     if (!id) {
-        alert('ID de personal no válido.');
+        alert('ID dd no válido.');
         return;
     }
 
-    var pagina = "<?php echo base_url(); ?>Mostrar/eliminar";
+    var pagina = "<?php echo base_url(); ?>MostrarCliente/eliminar";
     var datos = { "id": id };
 
     swal({
@@ -188,65 +167,53 @@
 
 
             $('.btn-success').click(function() {
-    var id = $(this).data('id'); // Obtener el ID del personal
+    var id = $(this).data('id'); // Obtener el ID ded
 
-    // Obtener los datos del personal
-    var nombre = $(this).closest('tr').find('td:eq(0)').text();
-    var nombre2 = $(this).closest('tr').find('td:eq(1)').text();
-    var apellido_paterno = $(this).closest('tr').find('td:eq(2)').text();
-    var apellido_materno = $(this).closest('tr').find('td:eq(3)').text();
-    var procedencia = $(this).closest('tr').find('td:eq(4)').text(); // Índice 4 para Procedencia
-    var rango_id = $(this).closest('tr').find('td:eq(5)').text(); // Obtener el ID del rol
-    var rango_nombre = $(this).closest('tr').find('td:eq(6)').text(); // Obtener el nombre del rol
+    // Obtener los datos ded
+    var username = $(this).closest('tr').find('td:eq(0)').text();
+    var email = $(this).closest('tr').find('td:eq(1)').text();
+    var rango_id = $(this).closest('tr').find('td:eq(2)').text(); // Obtener el ID del rol
+    var rango_nombre = $(this).closest('tr').find('td:eq(3)').text(); // Obtener el username del rol
 
-    // Llenar el formulario de agregar/editar con los datos del personal
-    $('#nombre_edit').val(nombre);
-    $('#nombre2_edit').val(nombre2);
-    $('#apellido_paterno_edit').val(apellido_paterno);
-    $('#apellido_materno_edit').val(apellido_materno);
-    $('#procedencia_edit').val(procedencia); // Cambiado a procedencia
+    // Llenar el formulario de agregar/editar con los datos ded
+    $('#username_edit').val(username);
+    $('#email_edit').val(email);
 
-    // Establecer el ID del personal que se está editando en el campo oculto
-    $('#id_personal_edit').val(id);
+    // Establecer el ID ded que se está editando en el campo oculto
+    $('#id_edit').val(id);
     
     // Establecer el valor seleccionado del campo select para el rol
     $('#id_rango_edit option').filter(function() {
         return $(this).text() === rango_nombre;
     }).prop('selected', true);
 
-    // Mostrar el formulario de agregar personal
+    // MostrarCliente el formulario de agregad
     $('#form_agregar').show();
 });
 
 
 
-            // agregar Y editar personal
+            // agregar Y editad
             $('#form_agregar').submit(function(event) {
                 event.preventDefault(); 
 
-                var id_personal = $('#id_personal_edit').val(); // Obtener el ID del personal 
+                var id = $('#id_edit').val(); // Obtener el ID ded 
 
                 // Obtener los datos del formulario
-                var nombre = $('#nombre_edit').val();
-                var nombre2 = $('#nombre2_edit').val();
-                var apellido_paterno = $('#apellido_paterno_edit').val();
-                var apellido_materno = $('#apellido_materno_edit').val();
-                var procedencia = $('#procedencia_edit').val();
+                var username = $('#username_edit').val();
+                var email = $('#email_edit').val();
                 var id_rango = $('#id_rango_edit').val();
 
                 // Crear un objeto con los datos del formulario
                 var datos = {
-                    id: id_personal,
-                    nombre: nombre,
-                    nombre2: nombre2,
-                    apellido_paterno: apellido_paterno,
-                    apellido_materno: apellido_materno,
-                    procedencia: procedencia,
+                    id: id,
+                    username: username,
+                    email: email,
                     id_rango: id_rango
                 };
 
                
-                var url = id_personal ? '<?php echo base_url('Mostrar/modificar'); ?>' : '<?php echo base_url('Mostrar/insert'); ?>';
+                var url = id ? '<?php echo base_url('MostrarCliente/modificar'); ?>' : '<?php echo base_url('MostrarCliente/insert'); ?>';
 
                
                 $.ajax({

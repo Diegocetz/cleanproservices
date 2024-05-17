@@ -55,12 +55,23 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login']['GET'] = 'Login/index';
 $route['login']['POST'] = 'Login/validate';
 $route['logout']['GET'] = 'Logout/logout';
-
 $route['registro'] = 'User/create';
+$route['carrito'] = 'Carrito/insert';
 $route['dashboard']['GET'] = 'Dashboard/index';
 $route['user'] = 'Mostrar/index';
 $route['user/eliminar'] = 'Mostrar/eliminar';
 $route['user/modificar'] = 'Mostrar/modificar';
+$route['clientes'] = 'MostrarCliente/index';
+$route['clientes/eliminar'] = 'MostrarCliente/eliminar';
+$route['clientes/modificar'] = 'MostrarCliente/modificar';
+$route['precios'] = 'Principal/precios';
+$route['principal/add_to_cart'] = 'Carrito/add_to_cart';
+$route['nosotros'] = 'Principal/nosotros';
+$route['contacto'] = 'Principal/contacto';
+
+
+
+
 
 
 

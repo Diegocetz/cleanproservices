@@ -21,14 +21,9 @@
     <!-- Links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
+        <a class="nav-link" href="<?php echo base_url()?>principal">HOME</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
-      </li>
+     
     </ul>
   </div>
 
@@ -38,25 +33,17 @@
 
 <ul class="nav nav-tabs flex-column">
   <li class="nav-item">
-    <a class="nav-link active" data-bs-toggle="tab" href="#home">Clients</a>
+    <a class="nav-link active" data-bs-toggle="tab" href="<?= base_url('clientes') ?>">Usuarios</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-bs-toggle="tab" href="<?= base_url('user') ?>">Personal</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#menu2">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#menu3">Link</a>
-  </li>
+ 
 </ul> 
 </div>
 <div class="col-sm-10">
 <div class="tab-content">
-  <div class="tab-pane container active" id="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</div>
-  <div class="tab-pane container fade" id="menu1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eos.</div>
-  <div class="tab-pane container fade" id="menu2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam.</div>
-  <div class="tab-pane container fade" id="menu3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ex.</div>
+ 
 </div>
 </div>
 </div>

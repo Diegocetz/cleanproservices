@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg"> 
+<nav class="navbar fixed-top navbar-expand-lg bg-primary"> 
   <div class="container container-fluid">   
 <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
         data-target="#navbarToggleExternalContent"
@@ -11,7 +11,7 @@
       <div class="col">
     <ul class="navbar-nav">  
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>">
+        <a class="nav-link" href="<?php echo base_url()?>principal">
         HOME</a>
       </li>
     
@@ -30,6 +30,10 @@
 
     <li class="nav-item">
     <a class="nav-link" href="<?php echo base_url()?>login">Login</a>  
+          </li>
+
+          <li class="nav-item">
+    <a class="nav-link" href="<?php echo base_url()?>registro">Register</a>  
           </li>
 
           <li class="nav-item">   

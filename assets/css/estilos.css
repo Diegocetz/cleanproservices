@@ -181,8 +181,7 @@ footer a:hover {
   border-radius: 10px 0 10px;
 }
 
-
-.card-deck{
+.card-deck {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -196,7 +195,7 @@ footer a:hover {
 }
 
 .card-header {
-  background-color: #1A1A18;
+  background-color: #fff;
   border: none;
   text-align: center;
 }
@@ -299,14 +298,16 @@ h1 {
   justify-content: center;
   text-align: center;
 }
-label, input {
+
+label,
+input {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
 }
 
-label{
+label {
   text-transform: uppercase;
 }
 
@@ -342,11 +343,11 @@ transition: .5s;
 }
 
 /*.btn {
-  background: none;
-  color: #ffffff;
-  border: solid 2px #fff;
-  padding-bottom: 1vh;
-  padding-top: 1vh;
+background: none;
+color: #ffffff;
+border: solid 2px #fff;
+padding-bottom: 1vh;
+padding-top: 1vh;
 }
 */
 
@@ -435,8 +436,6 @@ p.badge-custom2 {
   font-size: 1rem;
 }
 
-
-
 .custom-select {
   background: none;
   border: solid 1px #fff;
@@ -444,4 +443,8 @@ p.badge-custom2 {
 
 select {
   color: #fff;
+}
+
+.card{
+  background-color: white;
 }

@@ -68,4 +68,17 @@ public function cart_delete(){
     $this->cart->update($data);
 }
 
+public function set_news()
+    {
+            
+        $data = array(
+            'precio' => $this->input->post('precio'),
+            'cantidad' => $this->input->post('cantidad'),
+            'total' => $this->input->post('total'),
+
+        );
+    
+        return $this->db->insert('usuarios', $data);
+    }
+
 }

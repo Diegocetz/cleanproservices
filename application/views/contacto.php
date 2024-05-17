@@ -12,12 +12,11 @@
 </head>
 
 <!-- user.php -->
-<div class="container-custom1">
 <div class="container container-fluid">
    <br><br><br><br><br><br>
    <div class="card-group">
-      <div class="card color-custom2">
-         <div class="card-body text-custom6">
+      <div class="card">
+         <div class="card-body text-custom5">
             <label for="exampleInputPassword1">Nombre(s)</label>
             <input type="name" class="form-control form-control-md" id="exampleInputPassword1" placeholder="Escribe tu nombre">
             <label for="exampleInputPassword1">Apellido(s)</label>
@@ -47,9 +46,10 @@
             </div>
          </div>
       </div>
-      <div class="card color-custom2">
-         <h2 class="card-header text-center">Contacto directo</h2>
-         <div class="card-body text-custom6">
+      <div class="card">
+         <div class="card-body text-custom5">   
+                  <h2 class="text-center">Contacto directo</h2>
+
             <img class="img-fluid img-custom1" src="assets\img\logo clean.jpg">
             <br>
             <li><i class="bi bi-house fa-2x"></i>
@@ -72,7 +72,7 @@
 <br><br><br><br>
    <div class="container container-fluid w-50">
       <div class="card">
-         <div class="card-header">
+         <div class="card-header bg-white">
             <h2 class="col text-center">
                Ubicación
             </h2>
@@ -81,5 +81,4 @@
             <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sMultilimpia!5e0!6i15" allowfullscreen></iframe>
          </div>
       </div>
-   </div>
    <br><br>

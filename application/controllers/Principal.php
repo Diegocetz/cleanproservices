@@ -21,8 +21,8 @@
 					$data['program_3'] = $this->model_template->get_content('3');
 					$data['character_1'] = $this->model_template->get_content('4');
 					$data['character_2'] = $this->model_template->get_content('5');
-					$data['character_ 3'] = $this->model_template->get_content('6');
-					$data['title'] = 'ESTE ES EL TITULO';
+					$data['character_3'] = $this->model_template->get_content('6');
+					$data['title'] = 'CLEAN PRO SERVICES';
 
 
 					$this->load->view('secciones/header', $data);
